@@ -224,7 +224,7 @@ public class ElQuintoUI extends javax.swing.JFrame {
         //Esta variable es para comprobar que x numero no este repetido en una Array
 
         boolean repetido;
-        //Este boolean será el que indique si un valor esta repetido o no
+        //Este boolean será el que indiqu+e si un valor esta repetido o no
 
         for (int i = 0; i < numero.length; i++) {
             //este "for" escoge el primer numero de la array "numero"
@@ -303,6 +303,8 @@ public class ElQuintoUI extends javax.swing.JFrame {
                 break;
             }
         }
+        
+        
 
         for (int i = 0; i < numeros.size(); i++) {
             for (int j = 0; j < etiquetas.length; j++) {
