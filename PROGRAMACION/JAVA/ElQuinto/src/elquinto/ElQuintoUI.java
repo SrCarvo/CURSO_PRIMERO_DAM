@@ -15,11 +15,20 @@ import javax.swing.JLabel;
  */
 public class ElQuintoUI extends javax.swing.JFrame {
 
+    ArrayList<Integer> numeros = new ArrayList<>();
+    ArrayList<Integer> numerosAlmacenamiento = new ArrayList<>();
+
+
+    /*esto es un ArrayList. Lo he utilizado para almacenar de forma dinámica valores numéricos que mas adelante uso.*/
     /**
      * Creates new form ElQuintoUI
      */
     public ElQuintoUI() {
+
         initComponents();
+        ganar.setVisible(false);
+        jButton2.setVisible(false);
+        
     }
 
     /**
@@ -46,118 +55,148 @@ public class ElQuintoUI extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
         aleatorio1 = new javax.swing.JLabel();
+        ganar = new javax.swing.JPanel();
+        ganarBoton = new javax.swing.JButton();
+        ganarTexto = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(217, 238, 255));
+        jPanel1.setMaximumSize(new java.awt.Dimension(440, 300));
+        jPanel1.setMinimumSize(new java.awt.Dimension(440, 300));
+        jPanel1.setPreferredSize(new java.awt.Dimension(440, 300));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         numero1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero1.setText("x");
         numero1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 164, 67, 57));
+        jPanel1.add(numero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 67, 57));
 
         numero2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero2.setText("x");
         numero2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 164, 67, 57));
+        jPanel1.add(numero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 67, 57));
 
         numero4.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero4.setText("x");
         numero4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero4, new org.netbeans.lib.awtextra.AbsoluteConstraints(243, 164, 67, 57));
+        jPanel1.add(numero4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, 67, 57));
 
         numero3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero3.setText("x");
         numero3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 164, 67, 57));
+        jPanel1.add(numero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 280, 67, 57));
 
         numero7.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero7.setText("x");
         numero7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero7, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 227, 67, 57));
+        jPanel1.add(numero7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 67, 57));
 
         numero6.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero6.setText("x");
         numero6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero6, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 227, 67, 57));
+        jPanel1.add(numero6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, 67, 57));
 
         numero9.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero9.setText("x");
         numero9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero9, new org.netbeans.lib.awtextra.AbsoluteConstraints(243, 227, 67, 57));
+        jPanel1.add(numero9, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, 67, 57));
 
         numero8.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero8.setText("x");
         numero8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 227, 67, 57));
+        jPanel1.add(numero8, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 350, 67, 57));
 
         numero10.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero10.setText("x");
         numero10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero10, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 227, 67, 57));
+        jPanel1.add(numero10, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 350, 67, 57));
 
         numero5.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero5.setText("x");
         numero5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero5, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 164, 67, 57));
+        jPanel1.add(numero5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 280, 67, 57));
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, 130, 40));
 
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton1.setText("GENERAR CARTILLA");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 90, 40));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 430, 160, 40));
 
-        jButton2.setText("GENERAR");
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton2.setText("GENERAR NUMERO");
         jButton2.setToolTipText("");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 200, 100, 40));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 140, 40));
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setText("NUMERO ALEATORIO");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 60, -1, 40));
-
-        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel16.setText("GENERAR CARTILLA");
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 130, 40));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, 200, 40));
 
         aleatorio1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
         aleatorio1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         aleatorio1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         aleatorio1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(aleatorio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 100, 200, 80));
+        jPanel1.add(aleatorio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 200, 80));
+
+        ganar.setMaximumSize(new java.awt.Dimension(440, 300));
+        ganar.setMinimumSize(new java.awt.Dimension(440, 300));
+        ganar.setPreferredSize(new java.awt.Dimension(440, 300));
+        ganar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        ganarBoton.setText("jButton3");
+        ganarBoton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ganarBotonActionPerformed(evt);
+            }
+        });
+        ganar.add(ganarBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 160, 100, 40));
+
+        ganarTexto.setText("HAS GANADO");
+        ganar.add(ganarTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 90, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 642, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 770, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 65, Short.MAX_VALUE)
+                    .addComponent(ganar, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 65, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 358, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 92, Short.MAX_VALUE)
+                    .addComponent(ganar, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 93, Short.MAX_VALUE)))
         );
 
         pack();
@@ -165,107 +204,157 @@ public class ElQuintoUI extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        if (!jButton2.isShowing()) {
+            jButton2.setVisible(true);
+        }
+
         JLabel[] etiquetas = {numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8, numero9, numero10};
+        /*
+        Aqui he creado un Array normal de tipo JLabel, que almacena los numeros de la cartilla del Bingo que ya estan creados en la interfaz
+         */
         for (JLabel etiqueta : etiquetas) {
             etiqueta.setForeground(Color.black);
         }
+        //Esto es un buble For-Each. Basicamente misma funcion que un for normal, solo que para controlar arrays (netbenas te lo convierte automaticamente)
+
+        int[] numero = new int[10];
+        //Esto es una array de hasta 10 posiciones, que guardara los numeros randomizados no repetidos
+
         int comprobarA;
-        int[] numeros = new int[10];
+        //Esta variable es para comprobar que x numero no este repetido en una Array
+
         boolean repetido;
-        for (int i = 0; i < numeros.length; i++) {
+        //Este boolean será el que indique si un valor esta repetido o no
+
+        for (int i = 0; i < numero.length; i++) {
+            //este "for" escoge el primer numero de la array "numero"
             do {
+                //aqui estamos empezando un do-while, que primero realiza el codigo mostrado, y luego lo realiza en bucle hasta una condición
                 comprobarA = (int) (1 + Math.random() * 20);
+                //A esta variable se le esta asignando un valor random, de tipo int, desde el numero 1 hasta el numero 20
                 repetido = false;
+                //aqui estamos asignando el boolean creado anteriormente como default "false" para que repita el bucle while, hasta que repetido sea = true
                 for (int j = 0; j < i; j++) {
-                    if (comprobarA == numeros[j]) {
+                    //este for recorre por completo todo el array, para comrpobar que no existan valores iguales
+                    if (comprobarA == numero[j]) {
+                        //este if es para comprobar si el numero aleatorio "comprobarA" es igual a cualquiera del array "numero"
                         repetido = true;
-                        break; // Salir del bucle si se encuentra un duplicado
+                        //se asigna repetido como true, repitiendo el bucle do-while
+                        break;
+                        //al encontrarse un duplicado, el bucle for (int j) se finaliza garcias al "break", y se repite el do-while
                     }
                 }
-            } while (repetido);
-            numeros[i] = comprobarA; // Asignar el valor único encontrado
-            System.out.println(numeros[i]);
+            } while (repetido /*==true*/);
+            //esta es la condicion del do-while, que se repetira hasta que repetido == false
+            numero[i] = comprobarA;
+            //aqui finalmente estamops asignando el valor unico al array
+
         }
 
-        
-
-        // Asignar los números a las etiquetas
         for (int i = 0; i < etiquetas.length; i++) {
-            etiquetas[i].setText(String.valueOf(numeros[i]));
+            etiquetas[i].setText(String.valueOf(numero[i]));
+            //este for es para asignar los numeros del array "numero" al array "etiquetas"
         }
 
+        aleatorio1.setText("");
+        //vacia JLabel "aleatorio"
+        numeros.clear();
+        //vacia ArrayList "numeros"
+        numerosAlmacenamiento.clear();
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    ArrayList<Integer> numeros = new ArrayList<>();
+
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        /* int numero;
-        String numeroString;
-        if (contador != 3){
-        numero = (int) (1 + Math.random() * 20);
-        numeroString = String.valueOf(numero);
-        aleatorio1.setText(aleatorio1.getText() + numeroString + " ");   
-        }
-        int contador = 0;
-        
-        if (contador == 3) {
-            aleatorio1.setText("");
-            numero = (int) (1 + Math.random() * 20);
-            numeroString = String.valueOf(numero);
-            aleatorio1.setText(aleatorio1.getText() + numeroString + " ");
-            contador = 0;
-        }contador++;
-        JLabel[] etiquetas = {numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8, numero9, numero10};
-        for (JLabel etiqueta : etiquetas) {
-            if (etiqueta.equals(aleatorio1)) {
-                etiqueta.setText("");
-            }
-        }*/
 
         JLabel[] etiquetas = {numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8, numero9, numero10};
-
+        //Nuevamente, aqui he creado un Array normal de tipo JLabel, que almacena los numeros de la cartilla del Bingo que ya estan creados en la interfaz
+        int nuevoNumero;
+        //este int sera para asignarlo al ArrayList
         if (numeros.size() == 3) {
             numeros.clear();
             aleatorio1.setText("");
+            //este if hara que, si el ArrayList "numeros" posee mas de 3 posiciones, que se elimine el mismo y ponga el JLabel aleatorio sin texto
         }
-        numeros.add((int) (1 + Math.random() * 20));
-        
-        switch (numeros.size()){
-            case 1 : {
-                aleatorio1.setText(String.valueOf(numeros.get(0)));
-            }
-            case 2 : {
-                aleatorio1.setText(String.valueOf(numeros.get(0) + " " + numeros.get(1)));  
-            }
-            case 3 : {
-                aleatorio1.setText(String.valueOf(numeros.get(0) + " " + numeros.get(1) + " " + numeros.get(2)));  
-            }
-        }
-            
-        
 
-        for (int i = 0; i < etiquetas.length; i++) {
-            for (int j = 0; j < 10; j++) {
-                if (String.valueOf(numeros.get(i)).equals(etiquetas[j].getText())) {
+        do {
+            nuevoNumero = (int) (1 + Math.random() * 20);
+            //genera un número aleatorio entre 1 y 20.
+        } while (numerosAlmacenamiento.contains(nuevoNumero));
+        //verifica si el número ya existe en la lista.
+
+        numeros.add(nuevoNumero);
+        //aqui estamos añadiendo los valores random unicos en el ArrayList numeros
+        numerosAlmacenamiento.add((nuevoNumero));
+        //aqui estamos añadiendo los valores random unicos en el ArrayList numeros, que sirve para que no se repitan los numeros
+
+        switch (numeros.size()) {
+            //este switch actua dependiendo de el tamaño del ArrayList "numeros"
+            case 1: {
+                aleatorio1.setText(String.valueOf(numeros.get(0)));
+                break;
+            }
+            case 2: {
+                aleatorio1.setText(String.valueOf(numeros.get(0) + " " + numeros.get(1)));
+                break;
+            }
+            case 3: {
+                aleatorio1.setText(String.valueOf(numeros.get(0) + " " + numeros.get(1) + " " + numeros.get(2)));
+                break;
+            }
+        }
+
+        for (int i = 0; i < numeros.size(); i++) {
+            for (int j = 0; j < etiquetas.length; j++) {
+                int numero = (numeros.get(i));
+                int etiqueta = Integer.parseInt(etiquetas[j].getText());
+                if (numero == etiqueta) {
                     etiquetas[j].setForeground(Color.white);
+                    //este if es para seleccionar numeros iguales a los de la cartilla y pone de color blanco
+                }
+            }
+        }
+        int contador = 0;
+        for (int i = 0; i < etiquetas.length; i++) {
+
+            if (etiquetas[i].getForeground().equals(Color.white)) {
+                contador++;
+                if (contador == 10) {
+                    ganar.setVisible(true);
+                    jPanel1.setVisible(false);
+                    break;
+                    
                 }
             }
         }
 
-        /*
-        aleatorio1.setText(String.valueOf(numeros.get(0)));    
-        
-        
-        for (JLabel etiqueta : etiquetas) {
-          String valor = aleatorio1.getText();
-           String trim = valor.trim();
-            if (etiqueta.getText().equals(trim)) {
-                etiqueta.setForeground(Color.red);
-            }
-        }*/
 
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void ganarBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ganarBotonActionPerformed
+        // TODO add your handling code here:
+        JLabel[] etiquetas = {numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8, numero9, numero10};
+        /*
+        Aqui he creado un Array normal de tipo JLabel, que almacena los numeros de la cartilla del Bingo que ya estan creados en la interfaz
+         */
+        for (JLabel etiqueta : etiquetas) {
+            etiqueta.setForeground(Color.black);
+        }
+        for (JLabel etiqueta : etiquetas) {
+            etiqueta.setText("x");
+        }
+        aleatorio1.setText("");
+        //vacia JLabel "aleatorio"
+        numeros.clear();
+        //vacia ArrayList "numeros"
+        numerosAlmacenamiento.clear();
+        ganar.setVisible(false);
+        jButton2.setVisible(false);
+        
+        
+        jPanel1.setVisible(true);
+
+    }//GEN-LAST:event_ganarBotonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -304,15 +393,14 @@ public class ElQuintoUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel aleatorio1;
+    private javax.swing.JPanel ganar;
+    private javax.swing.JButton ganarBoton;
+    private javax.swing.JLabel ganarTexto;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel numero1;
     private javax.swing.JLabel numero10;
     private javax.swing.JLabel numero2;
