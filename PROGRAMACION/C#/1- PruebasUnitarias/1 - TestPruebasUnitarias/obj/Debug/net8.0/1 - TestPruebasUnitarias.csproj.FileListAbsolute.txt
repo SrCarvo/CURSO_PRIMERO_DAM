@@ -1,0 +1,213 @@
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\.msCoverageSourceRootsMapping_1 - TestPruebasUnitarias
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\testhost.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.deps.json
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.runtimeconfig.json
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.exe
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\testhost.exe
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\NUnit3.TestAdapter.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\nunit.engine.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\nunit.engine.api.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\nunit.engine.core.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\testcentric.engine.metadata.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1 - TestPruebasUnitarias.exe
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1 - TestPruebasUnitarias.deps.json
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1 - TestPruebasUnitarias.runtimeconfig.json
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1 - TestPruebasUnitarias.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1 - TestPruebasUnitarias.pdb
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.TestPlatform.CommunicationUtilities.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\nunit.framework.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\nunit.framework.legacy.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.pdb
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.csproj.AssemblyReference.cache
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.AssemblyInfoInputs.cache
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.AssemblyInfo.cs
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.csproj.CoreCompileInputs.cache
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - Test.AC4CED07.Up2Date
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\refint\1 - TestPruebasUnitarias.dll
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.pdb
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.genruntimeconfig.cache
+C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\ref\1 - TestPruebasUnitarias.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\.msCoverageSourceRootsMapping_1 - TestPruebasUnitarias
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\testhost.exe
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\testhost.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\NUnit3.TestAdapter.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\nunit.engine.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\nunit.engine.api.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\nunit.engine.core.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\testcentric.engine.metadata.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.deps.json
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.runtimeconfig.json
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.exe
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1 - TestPruebasUnitarias.exe
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1 - TestPruebasUnitarias.deps.json
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1 - TestPruebasUnitarias.runtimeconfig.json
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1 - TestPruebasUnitarias.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1 - TestPruebasUnitarias.pdb
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.TestPlatform.CommunicationUtilities.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\nunit.framework.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\nunit.framework.legacy.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.pdb
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.csproj.AssemblyReference.cache
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.GeneratedMSBuildEditorConfig.editorconfig
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.AssemblyInfoInputs.cache
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.AssemblyInfo.cs
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.csproj.CoreCompileInputs.cache
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.sourcelink.json
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - Test.AC4CED07.Up2Date
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\refint\1 - TestPruebasUnitarias.dll
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.pdb
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\1 - TestPruebasUnitarias.genruntimeconfig.cache
+D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1 - TestPruebasUnitarias\obj\Debug\net8.0\ref\1 - TestPruebasUnitarias.dll
