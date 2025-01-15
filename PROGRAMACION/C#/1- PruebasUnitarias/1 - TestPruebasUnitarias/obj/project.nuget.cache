@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "55/ftkuheDw=",
+  "dgSpecHash": "5M1N7YB3gcU=",
   "success": true,
-  "projectFilePath": "D:\\DAM\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1 - TestPruebasUnitarias\\1 - TestPruebasUnitarias.csproj",
+  "projectFilePath": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1 - TestPruebasUnitarias\\1 - TestPruebasUnitarias.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomaa\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",
     "C:\\Users\\tomaa\\.nuget\\packages\\microsoft.net.test.sdk\\17.12.0\\microsoft.net.test.sdk.17.12.0.nupkg.sha512",

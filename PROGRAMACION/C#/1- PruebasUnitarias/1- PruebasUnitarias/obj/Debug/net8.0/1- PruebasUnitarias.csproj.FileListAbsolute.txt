@@ -1,29 +1,15 @@
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.exe
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.deps.json
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.runtimeconfig.json
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.dll
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.pdb
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.AssemblyInfoInputs.cache
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.AssemblyInfo.cs
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.csproj.CoreCompileInputs.cache
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.dll
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\refint\1- PruebasUnitarias.dll
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.pdb
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.genruntimeconfig.cache
-C:\Users\tomaa\Downloads\Compressed\1- PruebasUnitarias\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\ref\1- PruebasUnitarias.dll
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.exe
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.deps.json
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.runtimeconfig.json
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.dll
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.pdb
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.GeneratedMSBuildEditorConfig.editorconfig
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.AssemblyInfoInputs.cache
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.AssemblyInfo.cs
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.csproj.CoreCompileInputs.cache
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.sourcelink.json
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.dll
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\refint\1- PruebasUnitarias.dll
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.pdb
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.genruntimeconfig.cache
-D:\DAM\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\ref\1- PruebasUnitarias.dll
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.exe
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.deps.json
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.runtimeconfig.json
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.dll
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\bin\Debug\net8.0\1- PruebasUnitarias.pdb
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.AssemblyInfoInputs.cache
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.AssemblyInfo.cs
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.csproj.CoreCompileInputs.cache
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.sourcelink.json
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.dll
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\refint\1- PruebasUnitarias.dll
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.pdb
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\1- PruebasUnitarias.genruntimeconfig.cache
+D:\GIT\PROGRAMACION\C#\1- PruebasUnitarias\1- PruebasUnitarias\obj\Debug\net8.0\ref\1- PruebasUnitarias.dll

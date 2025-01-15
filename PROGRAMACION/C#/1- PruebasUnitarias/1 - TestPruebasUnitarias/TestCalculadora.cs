@@ -7,12 +7,12 @@ namespace _1___TestPruebasUnitarias
     [TestFixture]
     public class TestCalculadora
     {
-        private Calculadora _calc;
+        private Calculadora Calculadora;
 
         [SetUp]
         public void SetUp()
         {
-            _calc = new Calculadora();
+            Calculadora = new Calculadora();
         }
 
         [Test]
@@ -24,7 +24,7 @@ namespace _1___TestPruebasUnitarias
 
             // Act - metodo a probar - sumar y el resultado
             // lo guardamos en la variable result
-            int result = _calc.Sumar(n1, n2);
+            int result = Calculadora.Sumar(n1, n2);
 
             // Assert (ver metodo equals de ASSERT, explica como usar THAT)
             //2- ver clase IS
@@ -39,7 +39,7 @@ namespace _1___TestPruebasUnitarias
 
             // Act - metodo a probar - sumar y el resultado
             // lo guardamos en la variable result
-            int result = _calc.Sumar(n1, n2);
+            int result = Calculadora.Sumar(n1, n2);
 
             // Assert (ver metodo equals de ASSERT, explica como usar THAT)
             //2- ver clase IS
@@ -54,7 +54,7 @@ namespace _1___TestPruebasUnitarias
             int n2 = 3;
 
             // Act - metodo a probar 
-            int result = _calc.Restar(n1, n2);
+            int result = Calculadora.Restar(n1, n2);
 
             // Assert (ver metodo equals de ASSERT, explica como usar THAT)
             //2- ver clase IS
@@ -70,10 +70,15 @@ namespace _1___TestPruebasUnitarias
         public void ComprobarContraseña_ValidarContraseña_ReturnCorrect(string contraseña, bool expectedResult)
         {
             // Act - metodo a probar
-            bool result = _calc.ComprobarContraseña(contraseña);
+            bool result = Calculadora.ComprobarContraseña(contraseña);
 
             // Assert
             Assert.That(result, Is.EqualTo(expectedResult));
+        }
+        public void ComprobarDividirEsExcepcion(int dividendo, int divisor)
+        {
+            int result = Calculadora.Dividir(dividendo, divisor);
+            Assert.That<int>(result, Is.EqualTo(dividendo / divisor));
         }
     }
 }

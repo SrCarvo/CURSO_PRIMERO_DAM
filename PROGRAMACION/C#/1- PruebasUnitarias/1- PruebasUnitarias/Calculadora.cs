@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _1__PruebasUnitarias
+﻿namespace _1__PruebasUnitarias
 {
     public class Calculadora
     {
@@ -26,6 +20,7 @@ namespace _1__PruebasUnitarias
                 return false;
             }
 
+
             // Verificar que contenga al menos un número
             bool contieneNumero = contraseña.Any(char.IsDigit);
 
@@ -38,6 +33,11 @@ namespace _1__PruebasUnitarias
 
             // Retornar verdadero solo si cumple todas las condiciones
             return contieneNumero && contieneMayuscula && contieneSimbol;
+        }
+
+        public int Dividir(int dividendo, int divisor)
+        {
+            throw new DivideByZeroException("El divisor no puede ser cero.");
         }
     }
 }
