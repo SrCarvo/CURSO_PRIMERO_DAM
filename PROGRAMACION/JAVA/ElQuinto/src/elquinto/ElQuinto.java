@@ -22,6 +22,7 @@ public class ElQuinto extends Application {
     public void start(Stage primaryStage) {
         ElQuintoUI ui = new ElQuintoUI();
         ui.setVisible(true);
+        ui.setTitle("ELQUINTO");
     }
 
     /**

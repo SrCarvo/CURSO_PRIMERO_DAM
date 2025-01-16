@@ -27,7 +27,9 @@ public class ElQuintoUI extends javax.swing.JFrame {
 
         initComponents();
         ganar.setVisible(false);
+        
         jButton2.setVisible(false);
+        
         
     }
 
@@ -40,6 +42,12 @@ public class ElQuintoUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDialog1 = new javax.swing.JDialog();
+        jPanel2 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         numero1 = new javax.swing.JLabel();
         numero2 = new javax.swing.JLabel();
@@ -56,9 +64,54 @@ public class ElQuintoUI extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
         aleatorio1 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         ganar = new javax.swing.JPanel();
         ganarBoton = new javax.swing.JButton();
         ganarTexto = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        AcercaDe = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+
+        jDialog1.setMinimumSize(new java.awt.Dimension(600, 400));
+
+        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel2.setMinimumSize(new java.awt.Dimension(600, 400));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("ElQuinto es un juego de rol narrativo y estratégico inspirado en mundos \nfantásticos y mecánicas clásicas de juegos como Dungeons & Dragons y\ntítulos de aventura interactiva. Diseñado para ofrecer una experiencia \ninmersiva, ElQuinto permite a los jugadores construir sus personajes, \ntomar decisiones que impactan la historia y desarrollar habilidades \núnicas mientras enfrentan desafíos que pondrán a prueba su ingenio, \nvalor y creatividad.");
+        jTextArea1.setEnabled(false);
+        jTextArea1.setOpaque(false);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(345, 123, 410, 141));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomaa\\Downloads\\Sin título.jpg")); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 299, -1));
+
+        jButton4.setText("jButton4");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 292, -1, -1));
+
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jDialog1Layout.setVerticalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -72,25 +125,25 @@ public class ElQuintoUI extends javax.swing.JFrame {
         numero1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero1.setText("x");
         numero1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 67, 57));
+        jPanel1.add(numero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 67, 57));
 
         numero2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero2.setText("x");
         numero2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 67, 57));
+        jPanel1.add(numero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 67, 57));
 
         numero4.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero4.setText("x");
         numero4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, 67, 57));
+        jPanel1.add(numero4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 67, 57));
 
         numero3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero3.setText("x");
         numero3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 280, 67, 57));
+        jPanel1.add(numero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 290, 67, 57));
 
         numero7.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         numero7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -126,7 +179,7 @@ public class ElQuintoUI extends javax.swing.JFrame {
         numero5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         numero5.setText("x");
         numero5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(numero5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 280, 67, 57));
+        jPanel1.add(numero5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, 67, 57));
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -162,6 +215,17 @@ public class ElQuintoUI extends javax.swing.JFrame {
         aleatorio1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.add(aleatorio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 200, 80));
 
+        jButton3.setText("jButton3");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 20, 120, -1));
+
+        jLabel2.setText("MENU CON OPCIONES");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 0, 130, 20));
+
         ganar.setMaximumSize(new java.awt.Dimension(440, 300));
         ganar.setMinimumSize(new java.awt.Dimension(440, 300));
         ganar.setPreferredSize(new java.awt.Dimension(440, 300));
@@ -173,10 +237,32 @@ public class ElQuintoUI extends javax.swing.JFrame {
                 ganarBotonActionPerformed(evt);
             }
         });
-        ganar.add(ganarBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 160, 100, 40));
+        ganar.add(ganarBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, 100, 40));
 
         ganarTexto.setText("HAS GANADO");
-        ganar.add(ganarTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 90, 40));
+        ganar.add(ganarTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 90, 40));
+
+        AcercaDe.setText("Acerca de");
+        AcercaDe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AcercaDeActionPerformed(evt);
+            }
+        });
+
+        jMenuItem1.setText("¿Que es?");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        AcercaDe.add(jMenuItem1);
+
+        jMenuBar1.add(AcercaDe);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -185,18 +271,20 @@ public class ElQuintoUI extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 770, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 65, Short.MAX_VALUE)
+                    .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(ganar, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 65, Short.MAX_VALUE)))
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 479, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 92, Short.MAX_VALUE)
+                    .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(ganar, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 93, Short.MAX_VALUE)))
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         pack();
@@ -358,6 +446,29 @@ public class ElQuintoUI extends javax.swing.JFrame {
 
     }//GEN-LAST:event_ganarBotonActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void AcercaDeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AcercaDeActionPerformed
+        // TODO add your handling code here:
+        
+        
+        
+    }//GEN-LAST:event_AcercaDeActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        jDialog1.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(true);
+        jDialog1.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -394,15 +505,27 @@ public class ElQuintoUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu AcercaDe;
     private javax.swing.JLabel aleatorio1;
     private javax.swing.JPanel ganar;
     private javax.swing.JButton ganarBoton;
     private javax.swing.JLabel ganarTexto;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JDialog jDialog1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel numero1;
     private javax.swing.JLabel numero10;
     private javax.swing.JLabel numero2;
