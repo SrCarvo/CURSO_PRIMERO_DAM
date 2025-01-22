@@ -5,9 +5,14 @@
 package elquinto;
 
 import java.awt.Color;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Random;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -17,6 +22,12 @@ public class ElQuintoUI extends javax.swing.JFrame {
 
     ArrayList<Integer> numeros = new ArrayList<>();
     ArrayList<Integer> numerosAlmacenamiento = new ArrayList<>();
+    ArrayList<String> Opciones = new ArrayList<String>();
+    ArrayList<String> Pistas = new ArrayList<String>();
+    Pantalla2 pantalla2;
+
+    
+    
 
 
     /*esto es un ArrayList. Lo he utilizado para almacenar de forma dinámica valores numéricos que mas adelante uso.*/
@@ -27,6 +38,7 @@ public class ElQuintoUI extends javax.swing.JFrame {
 
         initComponents();
         ganar.setVisible(false);
+        pantalla2 = new Pantalla2(this);
         
         jButton2.setVisible(false);
         
@@ -66,12 +78,20 @@ public class ElQuintoUI extends javax.swing.JFrame {
         aleatorio1 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
         ganar = new javax.swing.JPanel();
         ganarBoton = new javax.swing.JButton();
         ganarTexto = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         AcercaDe = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         jDialog1.setMinimumSize(new java.awt.Dimension(600, 400));
@@ -221,10 +241,56 @@ public class ElQuintoUI extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 20, 120, -1));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 110, -1));
 
-        jLabel2.setText("MENU CON OPCIONES");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 0, 130, 20));
+        jLabel2.setText("VENTANA NICKNAME");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 150, 20));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "a", "b", "ñ", "c" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 50, 120, 20));
+
+        jButton5.setText("jButton5");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 100, -1, -1));
+
+        jButton6.setText("jButton6");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 130, -1, -1));
+
+        jButton7.setText("jButton7");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 110, -1));
+
+        jLabel3.setText("VENTANA EMERGENTE");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 150, 20));
+
+        jButton8.setText("jButton8");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 110, 20));
+
+        jLabel4.setText("VENTANA CON OPCIONES");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 150, 20));
 
         ganar.setMaximumSize(new java.awt.Dimension(440, 300));
         ganar.setMinimumSize(new java.awt.Dimension(440, 300));
@@ -256,6 +322,14 @@ public class ElQuintoUI extends javax.swing.JFrame {
             }
         });
         AcercaDe.add(jMenuItem1);
+
+        jMenuItem2.setText("Sala");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        AcercaDe.add(jMenuItem2);
 
         jMenuBar1.add(AcercaDe);
 
@@ -447,7 +521,26 @@ public class ElQuintoUI extends javax.swing.JFrame {
     }//GEN-LAST:event_ganarBotonActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        MyIcon icon = new MyIcon();
+        
+    
+    Opciones.add ("opcion A");
+        Opciones.add ("opcion B");
+            Opciones.add ("opcion C");
+                Opciones.add ("opcion D");
+    
+    
+    
+    int seleccion = JOptionPane.showOptionDialog(null,
+            "Elige una opcion", "Titulo lol",
+            JOptionPane.DEFAULT_OPTION,
+            JOptionPane.QUESTION_MESSAGE,
+            icon,
+            Opciones.toArray(),
+            Opciones.get(0));
+
+
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void AcercaDeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AcercaDeActionPerformed
@@ -468,6 +561,75 @@ public class ElQuintoUI extends javax.swing.JFrame {
         this.setVisible(true);
         jDialog1.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        
+       
+        pantalla2.setVisible(true);
+      pantalla2.combo(jComboBox1.getSelectedItem().toString());
+        
+        
+        
+        
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        String path ="C:/Users/tomaa/Downloads/Music/Deșteaptă-te, române - Himno nacional de Rumania (letra).mp3";
+        Media media = new Media(new File(path).toURI().toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
+        mediaPlayer.setAutoPlay(true);
+        MediaView mediaView = new MediaView(mediaPlayer);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        String path ="C:/Users/tomaa/Downloads/Music/Deșteaptă-te, române - Himno nacional de Rumania (letra).mp3";
+        Media media = new Media(new File(path).toURI().toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
+        mediaPlayer.stop();
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        String nombre = JOptionPane.showInputDialog("Introduce tu nickname");
+        JOptionPane.showMessageDialog(null, "hola " + nombre);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, 
+                "Mensaje dentro de la ventana",
+        "Mensaje de la barra de titulo",
+        JOptionPane.ERROR_MESSAGE);
+        
+        int respuesta = JOptionPane.showConfirmDialog(null,
+                "¿Eres mayor de edaad?",
+                "Confirma",
+                JOptionPane.YES_NO_CANCEL_OPTION);
+        JOptionPane.showMessageDialog(null,"Has respondido: " + String.valueOf(respuesta));
+        
+        Pistas.add("Baby");
+        Pistas.add("Verde");
+        Pistas.add("Azul");
+        Pistas.add("Roja");
+        Pistas.add("Negra");
+        MyIcon icon = new MyIcon();
+        String Color_pista =
+                (String) JOptionPane.showInputDialog(null,
+                        "Selecciona una pista",
+                        "Astun",
+                        JOptionPane.DEFAULT_OPTION,
+                        icon,
+                        Pistas.toArray(),
+                        Pistas.get(0));
+        Pistas.clear();
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -514,14 +676,22 @@ public class ElQuintoUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;

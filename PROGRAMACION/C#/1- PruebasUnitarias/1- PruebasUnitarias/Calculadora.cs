@@ -2,6 +2,13 @@
 {
     public class Calculadora
     {
+        public List<int>log = new List<int>();
+
+        public void SumarAllLog(int a, int b)
+        {
+            int result = a + b;
+            log.Add(result);
+        }
         public int Sumar(int a, int b)
         {
             return a + b;

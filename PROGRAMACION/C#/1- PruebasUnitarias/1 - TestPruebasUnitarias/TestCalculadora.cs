@@ -80,6 +80,34 @@ namespace _1___TestPruebasUnitarias
             int result = Calculadora.Dividir(dividendo, divisor);
             Assert.That<int>(result, Is.EqualTo(dividendo / divisor));
         }
+        [Test]
+        public void PlusLogAddResult()
+        {
+            //ARANGE
+            int a = 3;
+            int b = 4;
+
+            //ACT
+            Calculadora.SumarAllLog(a, b);
+
+            //ASSERT
+            Assert.That(7, Is.EqualTo(a+b));
+            Assert.That(1, Is.EqualTo(Calculadora.log.Count));
+            Assert.That(7, Is.EqualTo(Calculadora.log[0]));
+        }
+        [TestCase(3,4)]
+        [TestCase(3,5)]
+        [TestCase(3, -5)]
+        public void PlusLogAddResultP2(int a, int b)
+        {
+            //ACT
+            Calculadora.SumarAllLog(a, b);
+
+            //ASSERT
+            Assert.That(a + b, Is.EqualTo(Calculadora.log[0]));
+        }
+
+
     }
 }
 
