@@ -18,16 +18,15 @@ public class ReproductorUI extends javax.swing.JFrame {
     String path = "";
     Media media;
     MediaPlayer mediaPlayer;
-    
 
     /**
      * Creates new form ReproductorUI
      */
     public ReproductorUI() {
-        
+
         initComponents();
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -39,8 +38,12 @@ public class ReproductorUI extends javax.swing.JFrame {
 
         jDialog1 = new javax.swing.JDialog();
         jFileChooser1 = new javax.swing.JFileChooser();
+        jButton5 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jSlider2 = new javax.swing.JSlider();
         jSlider1 = new javax.swing.JSlider();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -49,9 +52,7 @@ public class ReproductorUI extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
 
-        jDialog1.setMaximumSize(new java.awt.Dimension(600, 600));
         jDialog1.setMinimumSize(new java.awt.Dimension(600, 600));
-        jDialog1.setPreferredSize(new java.awt.Dimension(600, 600));
         jDialog1.setResizable(false);
 
         jFileChooser1.setMaximumSize(new java.awt.Dimension(510, 510));
@@ -76,10 +77,31 @@ public class ReproductorUI extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(920, 600));
         setMinimumSize(new java.awt.Dimension(920, 600));
-        setPreferredSize(new java.awt.Dimension(920, 600));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton5.setBackground(new java.awt.Color(255, 102, 102));
+        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 70)); // NOI18N
+        jButton5.setText(":");
+        jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 70, 30, 30));
+
+        jButton4.setBackground(new java.awt.Color(255, 204, 204));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton4.setText("RESET");
+        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 330, -1, 40));
 
         jLabel3.setBackground(new java.awt.Color(255, 204, 204));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -87,9 +109,35 @@ public class ReproductorUI extends javax.swing.JFrame {
         jLabel3.setOpaque(true);
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, 440, 80));
 
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel4.setText("1");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 330, 40, 40));
+
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel2.setText("100");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 390, 40, 40));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 390, 40, 40));
+
+        jSlider2.setBackground(new java.awt.Color(255, 153, 153));
+        jSlider2.setMaximum(800);
+        jSlider2.setValue(100);
+        jSlider2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jSlider2.setOpaque(true);
+        jSlider2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSlider2StateChanged(evt);
+            }
+        });
+        jSlider2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jSlider2MouseDragged(evt);
+            }
+        });
+        jSlider2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jSlider2MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jSlider2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, 190, 40));
 
         jSlider1.setBackground(new java.awt.Color(255, 153, 153));
         jSlider1.setValue(100);
@@ -110,21 +158,21 @@ public class ReproductorUI extends javax.swing.JFrame {
                 jSlider1MouseClicked(evt);
             }
         });
-        getContentPane().add(jSlider1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 390, 190, 40));
+        getContentPane().add(jSlider1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 390, 190, 40));
 
         jButton1.setBackground(new java.awt.Color(255, 153, 153));
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomaa\\Downloads\\file(1).png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("D:\\GIT\\PROGRAMACION\\JAVA\\ReproductorMultimedia\\src\\reproductormultimedia\\file(1).png")); // NOI18N
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 330, 90, 100));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 330, 90, 100));
 
         jButton3.setBackground(new java.awt.Color(255, 153, 153));
         jButton3.setForeground(new java.awt.Color(102, 102, 0));
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomaa\\Downloads\\file.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("D:\\GIT\\PROGRAMACION\\JAVA\\ReproductorMultimedia\\src\\reproductormultimedia\\file.png")); // NOI18N
         jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/reproductormultimedia/file.png"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -134,7 +182,7 @@ public class ReproductorUI extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 330, 90, 100));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomaa\\Downloads\\MP3(1).png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\GIT\\PROGRAMACION\\JAVA\\ReproductorMultimedia\\src\\reproductormultimedia\\MP3(1).png")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, -1));
 
         jMenu1.setText("Ajustes");
@@ -153,14 +201,14 @@ public class ReproductorUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
+
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
 
         if (mediaPlayer != null) {
             mediaPlayer.play();
         }
-        
+
 
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -179,44 +227,57 @@ public class ReproductorUI extends javax.swing.JFrame {
 
     private void jSlider1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSlider1MouseClicked
         // TODO add your handling code here:
-
-        double volumenprueba = (double)jSlider1.getValue()/100;
-        jLabel2.setText(String.valueOf((int)(volumenprueba*100)));
-        mediaPlayer.setVolume(volumenprueba);
+        
+        double volumenprueba = (double) jSlider1.getValue() / 100;
+        jLabel2.setText(String.valueOf((int) (volumenprueba * 100)));
+        if (mediaPlayer != null) {
+            mediaPlayer.setVolume(volumenprueba);
+        }
+        
     }//GEN-LAST:event_jSlider1MouseClicked
 
     private void jSlider1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSlider1MouseDragged
-         double volumen = (double) jSlider1.getValue() / 100;
+        
+        double volumenprueba = (double) jSlider1.getValue() / 100;
+        jLabel2.setText(String.valueOf((int) (volumenprueba * 100)));
         if (mediaPlayer != null) {
-            mediaPlayer.setVolume(volumen);
+            mediaPlayer.setVolume(volumenprueba);
         }
-         jLabel2.setText(String.valueOf((int) (volumen * 100)));
     }//GEN-LAST:event_jSlider1MouseDragged
 
     private void jFileChooser1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFileChooser1ActionPerformed
         // TODO add your handling code here:
+        
         File selectedFile = jFileChooser1.getSelectedFile();
+        
         if (selectedFile != null) {
-            // Convertir la ruta a URI y normalizar las barras
+            
             path = selectedFile.toURI().toString();
             jLabel3.setText(selectedFile.getName());
 
-            // Detener y liberar el reproductor actual si está en uso
+            
             if (mediaPlayer != null) {
                 mediaPlayer.stop();
                 mediaPlayer.dispose();
             }
 
-            // Crear nuevos objetos Media y MediaPlayer
+            
             media = new Media(path);
             mediaPlayer = new MediaPlayer(media);
 
-            // Configurar el volumen al valor actual del slider
+            
             double volumen = (double) jSlider1.getValue() / 100;
             mediaPlayer.setVolume(volumen);
-            jDialog1.setVisible(true);
+            mediaPlayer.setRate(1);
+            jLabel4.setText(String.valueOf((int)mediaPlayer.getRate()));
+            jSlider2.setValue(100);
+            
+
+            jDialog1.setVisible(false);
+
+        } else {
+            jDialog1.setVisible(false);
         }
-    
     }//GEN-LAST:event_jFileChooser1ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
@@ -225,6 +286,45 @@ public class ReproductorUI extends javax.swing.JFrame {
 
         jDialog1.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jSlider2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider2StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jSlider2StateChanged
+
+    private void jSlider2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSlider2MouseDragged
+        // TODO add your handling code here:
+        double velocidad = (double) jSlider2.getValue() / 100;
+        if (velocidad%2==0) {
+        jLabel4.setText(String.valueOf((int)(velocidad)));
+        }else{
+            jLabel4.setText(String.valueOf(velocidad));
+        }
+        if (mediaPlayer != null) {
+                mediaPlayer.setRate(velocidad);
+        }
+    }//GEN-LAST:event_jSlider2MouseDragged
+
+    private void jSlider2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSlider2MouseClicked
+        // TODO add your handling code here:
+        double velocidad = (double) jSlider2.getValue() / 100;
+        if (velocidad%2==0) {
+        jLabel4.setText(String.valueOf((int)(velocidad)));
+        }else{
+            jLabel4.setText(String.valueOf(velocidad));
+        }
+        if (mediaPlayer != null) {
+                mediaPlayer.setRate(velocidad);
+        }
+    }//GEN-LAST:event_jSlider2MouseClicked
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -264,14 +364,18 @@ public class ReproductorUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JFileChooser jFileChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JSlider jSlider1;
+    private javax.swing.JSlider jSlider2;
     // End of variables declaration//GEN-END:variables
 }
