@@ -9,11 +9,11 @@ package herenciagrafica;
  * @author tomaa
  */
 public class Hijo  extends Padre{
-    private double dinero_hijo;
-    private double nombre_hijo;
+    private double dinero_hijo=20;
+    private String nombre_hijo="Andrei";
 
     public Hijo(){
-
+        
 }
 
     public double getDinero_hijo() {
@@ -24,12 +24,13 @@ public class Hijo  extends Padre{
         this.dinero_hijo = dinero_hijo;
     }
 
-    public double getNombre_hijo() {
+    public String getNombre_hijo() {
         return nombre_hijo;
     }
 
-    public void setNombre_hijo(double nombre_hijo) {
+    public void setNombre_hijo(String nombre_hijo) {
         this.nombre_hijo = nombre_hijo;
     }
+    
     
 }

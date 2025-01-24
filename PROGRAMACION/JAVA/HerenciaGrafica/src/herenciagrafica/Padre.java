@@ -9,8 +9,8 @@ package herenciagrafica;
  * @author tomaa
  */
 public class Padre {
-    private double dinero;
-    private String apellido;
+    private double dinero = 10;
+    private String apellido = "Garcia";
     
     public Padre(){
         
