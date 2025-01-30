@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WCaIfnNh9Ug=",
+  "dgSpecHash": "40F3qTharp8=",
   "success": true,
   "projectFilePath": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\1- PruebasUnitarias.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\tomaa\\.nuget\\packages\\nunit\\4.3.2\\nunit.4.3.2.nupkg.sha512"
+  ],
   "logs": []
 }
