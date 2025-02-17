@@ -4,7 +4,6 @@
  */
 package crud;
 
-import java.util.Scanner;
 
 /**
  *

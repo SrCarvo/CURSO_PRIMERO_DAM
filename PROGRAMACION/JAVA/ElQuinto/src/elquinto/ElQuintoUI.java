@@ -620,14 +620,14 @@ public class ElQuintoUI extends javax.swing.JFrame {
         Pistas.add("Roja");
         Pistas.add("Negra");
         MyIcon icon = new MyIcon();
-        String Color_pista =
-                (String) JOptionPane.showInputDialog(null,
+        String Color_pista = (String) JOptionPane.showInputDialog(null,
                         "Selecciona una pista",
                         "Astun",
                         JOptionPane.DEFAULT_OPTION,
                         icon,
                         Pistas.toArray(),
                         Pistas.get(0));
+         JOptionPane.showMessageDialog(null,"Has respondido: " + String.valueOf(Color_pista));
         Pistas.clear();
     }//GEN-LAST:event_jButton8ActionPerformed
 

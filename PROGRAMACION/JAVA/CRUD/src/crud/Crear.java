@@ -81,7 +81,7 @@ public class Crear {
             System.out.println("--------------------------------------------------------------------------------------");
             for (int i = 0; i < datos.length; i++) {
 
-                System.out.println("Ingresa el dato " + nombres[0][b] + " de " + nombres[c - 1][0]);
+                System.out.println("Ingresa el dato " + nombres[c-1][b] + " de " + nombres[c - 1][0]);
                 datos[i] = sn.string();
 
                 if (String.valueOf(cantidadDatos).equals(String.valueOf(b))) {
@@ -112,10 +112,11 @@ public class Crear {
             System.out.println("--------------------------------------------------------------------------------------");
 
             System.out.print("Nombre del objeto: " + nombres[i][0] + "->");
+            System.out.print(" Datos: ");
             for (int j = 1; j <= cantidadDatos; j++) {
                 cuenteo = cuenteo + 1;
-                System.out.print(" Datos: " + nombres[i][j] + " -> ");
-                System.out.print("Valores del dato: " + datos[cuenteo - 1]);
+                System.out.print( nombres[i][j] + ": ");
+                System.out.print(datos[cuenteo - 1] + " | ");
 
             }
             System.out.println("");

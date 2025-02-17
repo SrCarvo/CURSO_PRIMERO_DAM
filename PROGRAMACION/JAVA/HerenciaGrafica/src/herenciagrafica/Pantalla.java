@@ -146,17 +146,18 @@ public class Pantalla extends javax.swing.JFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addComponent(jLabel10)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(textField6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton4)))
+                                        .addComponent(textField6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton3)
-                        .addGap(16, 16, 16))))
+                        .addGap(16, 16, 16))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton4)
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -208,6 +209,7 @@ public class Pantalla extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         
+        
         textField1.setText(String.valueOf(padre.getDinero()));
         textField2.setText(padre.getApellido());
         
@@ -215,16 +217,23 @@ public class Pantalla extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        if (!String.valueOf(padre.getDinero()).contains(textField1.getText())) {
+         padre.setDinero(Integer.parseInt(textField1.getText())); 
+        }
+        if (!String.valueOf(padre.getDinero()).contains(textField2.getText())) {
+          padre.setApellido(textField2.getText()); 
+        }
         
-        padre.setDinero(Integer.parseInt(textField1.getText()));
-        padre.setApellido(textField2.getText());
+        
+       
         textField1.setText("");
         textField2.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        
+        hijo.setDinero(padre.getDinero());
+        hijo.setApellido(padre.getApellido());
         
         textField3.setText(String.valueOf(hijo.getDinero_hijo()));
         textField4.setText(hijo.getNombre_hijo());
@@ -234,9 +243,15 @@ public class Pantalla extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        if (!String.valueOf(hijo.getDinero_hijo()).contains(textField3.getText())) {
+        hijo.setDinero_hijo(Integer.parseInt(textField3.getText()));    
+        }
+        if ((!hijo.getNombre_hijo().contains(textField4.getText()))) {
+        hijo.setNombre_hijo(textField4.getText());    
+        }
         
-        hijo.setDinero_hijo(Integer.parseInt(textField3.getText()));
-        hijo.setNombre_hijo(textField4.getText());
+        
+        
         textField3.setText("");
         textField4.setText("");
     }//GEN-LAST:event_jButton4ActionPerformed

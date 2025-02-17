@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|d:\\git\\programacion\\c#\\1- pruebasunitarias\\1- pruebasunitarias\\assertsyntax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|solutionrelative:1- pruebasunitarias\\assertsyntax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B6E8DABA-164E-4E2E-A3A5-32130B12DC4E}|1 - TestPruebasUnitarias\\1 - TestPruebasUnitarias.csproj|d:\\git\\programacion\\c#\\1- pruebasunitarias\\1 - testpruebasunitarias\\testcalculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6E8DABA-164E-4E2E-A3A5-32130B12DC4E}|1 - TestPruebasUnitarias\\1 - TestPruebasUnitarias.csproj|solutionrelative:1 - testpruebasunitarias\\testcalculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6E8DABA-164E-4E2E-A3A5-32130B12DC4E}|1 - TestPruebasUnitarias\\1 - TestPruebasUnitarias.csproj|d:\\git\\programacion\\c#\\1- pruebasunitarias\\1 - testpruebasunitarias\\usuariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6E8DABA-164E-4E2E-A3A5-32130B12DC4E}|1 - TestPruebasUnitarias\\1 - TestPruebasUnitarias.csproj|solutionrelative:1 - testpruebasunitarias\\usuariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B6E8DABA-164E-4E2E-A3A5-32130B12DC4E}|1 - TestPruebasUnitarias\\1 - TestPruebasUnitarias.csproj|d:\\git\\programacion\\c#\\1- pruebasunitarias\\1 - testpruebasunitarias\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6E8DABA-164E-4E2E-A3A5-32130B12DC4E}|1 - TestPruebasUnitarias\\1 - TestPruebasUnitarias.csproj|solutionrelative:1 - testpruebasunitarias\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|d:\\git\\programacion\\c#\\1- pruebasunitarias\\1- pruebasunitarias\\assertsyntax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|solutionrelative:1- pruebasunitarias\\assertsyntax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|d:\\git\\programacion\\c#\\1- pruebasunitarias\\1- pruebasunitarias\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|solutionrelative:1- pruebasunitarias\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|d:\\git\\programacion\\c#\\1- pruebasunitarias\\1- pruebasunitarias\\class2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|solutionrelative:1- pruebasunitarias\\class2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|d:\\git\\programacion\\c#\\1- pruebasunitarias\\1- pruebasunitarias\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|solutionrelative:1- pruebasunitarias\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|d:\\git\\programacion\\c#\\1- pruebasunitarias\\1- pruebasunitarias\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|solutionrelative:1- pruebasunitarias\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|d:\\git\\programacion\\c#\\1- pruebasunitarias\\1- pruebasunitarias\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|solutionrelative:1- pruebasunitarias\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{251EC79A-33AB-4921-9EF5-794948F3D004}|1- PruebasUnitarias\\1- PruebasUnitarias.csproj|d:\\git\\programacion\\c#\\1- pruebasunitarias\\1- pruebasunitarias\\1- pruebasunitarias.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -26,24 +50,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "1- PruebasUnitarias",
-              "DocumentMoniker": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\1- PruebasUnitarias.csproj",
-              "RelativeDocumentMoniker": "1- PruebasUnitarias\\1- PruebasUnitarias.csproj",
-              "ToolTip": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\1- PruebasUnitarias.csproj",
-              "RelativeToolTip": "1- PruebasUnitarias\\1- PruebasUnitarias.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-30T07:23:44.019Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestCalculadora.cs",
+              "DocumentMoniker": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1 - TestPruebasUnitarias\\TestCalculadora.cs",
+              "RelativeDocumentMoniker": "1 - TestPruebasUnitarias\\TestCalculadora.cs",
+              "ToolTip": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1 - TestPruebasUnitarias\\TestCalculadora.cs",
+              "RelativeToolTip": "1 - TestPruebasUnitarias\\TestCalculadora.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:51:58.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1 - TestPruebasUnitarias\\Program.cs",
+              "RelativeDocumentMoniker": "1 - TestPruebasUnitarias\\Program.cs",
+              "ToolTip": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1 - TestPruebasUnitarias\\Program.cs",
+              "RelativeToolTip": "1 - TestPruebasUnitarias\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:51:57.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Class2.cs",
+              "DocumentMoniker": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\Class2.cs",
+              "RelativeDocumentMoniker": "1- PruebasUnitarias\\Class2.cs",
+              "ToolTip": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\Class2.cs",
+              "RelativeToolTip": "1- PruebasUnitarias\\Class2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:51:30.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssertSyntax.cs",
+              "DocumentMoniker": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\AssertSyntax.cs",
+              "RelativeDocumentMoniker": "1- PruebasUnitarias\\AssertSyntax.cs",
+              "ToolTip": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\AssertSyntax.cs",
+              "RelativeToolTip": "1- PruebasUnitarias\\AssertSyntax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T07:24:41.441Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,7 +123,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\Class1.cs",
+              "RelativeDocumentMoniker": "1- PruebasUnitarias\\Class1.cs",
+              "ToolTip": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\Class1.cs",
+              "RelativeToolTip": "1- PruebasUnitarias\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:51:29.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\Usuario.cs",
+              "RelativeDocumentMoniker": "1- PruebasUnitarias\\Usuario.cs",
+              "ToolTip": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\Usuario.cs",
+              "RelativeToolTip": "1- PruebasUnitarias\\Usuario.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:51:32.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\Program.cs",
+              "RelativeDocumentMoniker": "1- PruebasUnitarias\\Program.cs",
+              "ToolTip": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\Program.cs",
+              "RelativeToolTip": "1- PruebasUnitarias\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:51:31.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Calculadora.cs",
               "DocumentMoniker": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\Calculadora.cs",
               "RelativeDocumentMoniker": "1- PruebasUnitarias\\Calculadora.cs",
@@ -73,16 +175,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AssertSyntax.cs",
-              "DocumentMoniker": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\AssertSyntax.cs",
-              "RelativeDocumentMoniker": "1- PruebasUnitarias\\AssertSyntax.cs",
-              "ToolTip": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\AssertSyntax.cs",
-              "RelativeToolTip": "1- PruebasUnitarias\\AssertSyntax.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAswDUAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T07:24:41.441Z",
-              "EditorCaption": ""
+              "DocumentIndex": 9,
+              "Title": "1- PruebasUnitarias.csproj",
+              "DocumentMoniker": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\1- PruebasUnitarias.csproj",
+              "RelativeDocumentMoniker": "1- PruebasUnitarias\\1- PruebasUnitarias.csproj",
+              "ToolTip": "D:\\GIT\\PROGRAMACION\\C#\\1- PruebasUnitarias\\1- PruebasUnitarias\\1- PruebasUnitarias.csproj",
+              "RelativeToolTip": "1- PruebasUnitarias\\1- PruebasUnitarias.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-30T07:23:44.019Z"
             }
           ]
         }

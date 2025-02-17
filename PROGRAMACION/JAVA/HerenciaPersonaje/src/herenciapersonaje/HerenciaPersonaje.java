@@ -15,6 +15,8 @@ public class HerenciaPersonaje {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        HerenciaPersonajeUI ui = new HerenciaPersonajeUI ();
+        ui.setVisible(true);
     }
     
 }

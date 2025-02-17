@@ -4,17 +4,29 @@
  */
 package herenciapersonaje;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author tomaa
  */
 public class HerenciaPersonajeUI extends javax.swing.JFrame {
+    
+    NietoNamekiano nietonamek = new NietoNamekiano();
+    Boo boo = new Boo();
+    ArrayList<Namekiano> namekianos = new ArrayList<>();
+    ArrayList<Boo> boos = new ArrayList<>();
+    String ultimoSeleccionado;
+    ArrayList<String> Amigos = new ArrayList<>();
+    String amigo;
 
     /**
      * Creates new form HerenciaPersonajeUI
      */
     public HerenciaPersonajeUI() {
+        
         initComponents();
+        
     }
 
     /**
@@ -26,21 +38,264 @@ public class HerenciaPersonajeUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel1 = new javax.swing.JLabel();
+        comboBox1 = new javax.swing.JComboBox<>();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        textField4 = new javax.swing.JTextField();
+        textField2 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        textField3 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        button1 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        textArea1 = new javax.swing.JTextArea();
+        button2 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        textField1 = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        picolo = new javax.swing.JLabel();
+        booImagen = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setText("SELECCIONAR");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, 57));
+
+        comboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "namekiano", "boo" }));
+        comboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBox1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(comboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 143, -1));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel2.setText("JUEGO DRAGON BALL");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 10, -1, 63));
+
+        jLabel3.setText("KI");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 160, 50, -1));
+
+        textField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textField4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(textField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 130, 40));
+
+        textField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textField2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(textField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 275, 193, 43));
+
+        jLabel4.setText("MUNDO");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 250, -1, -1));
+        getContentPane().add(textField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 364, 193, 43));
+
+        jLabel5.setText("Nombre");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 342, -1, -1));
+
+        button1.setText("INGRESAR");
+        button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 419, -1, -1));
+
+        textArea1.setColumns(20);
+        textArea1.setRows(5);
+        jScrollPane1.setViewportView(textArea1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, 570, 161));
+
+        button2.setText("LEER");
+        button2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(button2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 419, -1, -1));
+
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 151, 30));
+
+        jToggleButton1.setText("CONVERTIR");
+        jToggleButton1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jToggleButton1StateChanged(evt);
+            }
+        });
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, -1, -1));
+
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 90, 200, -1));
+
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 200, -1));
+
+        jLabel7.setText("jLabel7");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
+
+        jLabel8.setText("jLabel8");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, -1, -1));
+
+        jLabel9.setText("jLabel9");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, -1, -1));
+
+        textField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(textField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 180, 193, 43));
+
+        jLabel10.setText("AMIGOS");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, -1, -1));
+
+        picolo.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomaa\\Downloads\\039f66bfd6b755978459b794b16ec58a186206c0_hq-ezgif.com-crop.gif")); // NOI18N
+        getContentPane().add(picolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, -1, -1));
+
+        booImagen.setIcon(new javax.swing.ImageIcon("C:\\Users\\tomaa\\Downloads\\BOO-ezgif.com-resize.gif")); // NOI18N
+        getContentPane().add(booImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+        // TODO add your handling code here:
+
+        String valor = String.valueOf(comboBox1.getSelectedItem());
+        
+        if (valor.equals("namekiano")) {
+            Namekiano nuevoNamekiano = new Namekiano();
+            nuevoNamekiano.setKi(Integer.parseInt(textField1.getText()));
+            nuevoNamekiano.setMundo(textField2.getText());
+            nuevoNamekiano.setNombre(textField3.getText());
+            
+                
+                nuevoNamekiano.setAmigos(Amigos);
+            
+            
+            namekianos.add(nuevoNamekiano);
+            jComboBox1.addItem("Namekiano: " + nuevoNamekiano.getNombre());
+        } else if (valor.equals("boo")) {
+            Boo nuevoBoo = new Boo();
+            nuevoBoo.setKi(Integer.parseInt(textField1.getText()));
+            nuevoBoo.setMundo(textField2.getText());
+            nuevoBoo.setNombre(textField3.getText());
+            
+            boos.add(nuevoBoo);
+            jComboBox2.addItem("Boo: " + nuevoBoo.getNombre());
+        }
+        
+        jLabel8.setText(String.valueOf(namekianos.size() - 1));
+        jLabel9.setText(String.valueOf(boos.size() - 1));
+
+    }//GEN-LAST:event_button1ActionPerformed
+
+    private void textField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField4ActionPerformed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_textField4ActionPerformed
+
+    private void textField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textField2ActionPerformed
+
+    private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
+        // TODO add your handling code here:
+
+        if (ultimoSeleccionado.equals("namekiano")) {
+            textField1.setText(String.valueOf(namekianos.get(jComboBox1.getSelectedIndex()).getKi()));
+            textField2.setText(namekianos.get(jComboBox1.getSelectedIndex()).getMundo());
+            textField3.setText(namekianos.get(jComboBox1.getSelectedIndex()).getNombre());
+        }    
+        
+        if (ultimoSeleccionado.equals("boo")) {
+            
+            textField1.setText(String.valueOf(boos.get(jComboBox2.getSelectedIndex()).getKi()));
+            textField2.setText(boos.get(jComboBox2.getSelectedIndex()).getMundo());
+            textField3.setText(boos.get(jComboBox2.getSelectedIndex()).getNombre());
+        }
+        
+
+    }//GEN-LAST:event_button2ActionPerformed
+
+    private void comboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox1ActionPerformed
+        // TODO add your handling code here:
+        booImagen.setVisible(false);
+        
+        String valor = String.valueOf(comboBox1.getSelectedItem());
+        if (valor.equals("namekiano")) {
+            jLabel10.setVisible(true);
+            textField4.setVisible(true);
+            picolo.setVisible(true);
+        } else {
+            jLabel10.setVisible(false);
+            textField4.setVisible(false);
+            picolo.setVisible(false);
+            booImagen.setVisible(true);
+        }
+
+    }//GEN-LAST:event_comboBox1ActionPerformed
+
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        if (jToggleButton1.isSelected()) {
+            boo.regeneracion = true;
+            textArea1.setText(boo.convertido());
+        } else {
+            boo.regeneracion = false;
+            textArea1.setText(boo.convertido());
+        }
+        jLabel6.setText(String.valueOf(boo.regeneracion));
+
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
+
+    private void jToggleButton1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jToggleButton1StateChanged
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jToggleButton1StateChanged
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+        ultimoSeleccionado = "namekiano";
+        jLabel6.setText(String.valueOf(jComboBox1.getSelectedIndex()));
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+        ultimoSeleccionado = "boo";
+        jLabel7.setText(String.valueOf(jComboBox2.getSelectedIndex()));
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void textField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +333,29 @@ public class HerenciaPersonajeUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel booImagen;
+    private javax.swing.JButton button1;
+    private javax.swing.JButton button2;
+    private javax.swing.JComboBox<String> comboBox1;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JLabel picolo;
+    private javax.swing.JTextArea textArea1;
+    private javax.swing.JTextField textField1;
+    private javax.swing.JTextField textField2;
+    private javax.swing.JTextField textField3;
+    private javax.swing.JTextField textField4;
     // End of variables declaration//GEN-END:variables
 }
