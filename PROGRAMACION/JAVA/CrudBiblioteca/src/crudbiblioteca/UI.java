@@ -13,8 +13,7 @@ import javax.swing.table.DefaultTableModel;
  * @author tomaa
  */
 public class UI extends javax.swing.JFrame {
-    ArrayList <Libro> libros = new ArrayList<>();
-    ArchivoObjeto archivoObjeto = new ArchivoObjeto();
+
 
     /**
      * Creates new form UI
@@ -577,40 +576,11 @@ public class UI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void insertarAccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insertarAccionActionPerformed
-        // TODO add your handling code here:
-        if (isbnInsertar.getText().isEmpty() ||tituloInsertar.getText().isEmpty() ||categoriaInsertar.getText().isEmpty() ||precioInsertar.getText().isEmpty() ||numPagInsertar.getText().isEmpty() ) {
-            JOptionPane.showMessageDialog(null, "ILLO LOS CAMPOS EN BLANCO", "ILLOOOOOOOOOO", JOptionPane.ERROR_MESSAGE);
-        }else{
-         Libro libro = new Libro();
-        
-        libro.setIsbn(Integer.parseInt(isbnInsertar.getText()));
-        libro.setTitulo(tituloInsertar.getText());
-        libro.setCategoria(categoriaInsertar.getText());
-        libro.setPrecio(Integer.parseInt(precioInsertar.getText()));
-        libro.setNumeroPags(Integer.parseInt(numPagInsertar.getText()));
-        
-        libros.add(libro);
-        archivoObjeto.guardarArrayList(libros, "Biblioteca.txt" );
-        
-        isbnInsertar.setText("");
-        tituloInsertar.setText("");
-        categoriaInsertar.setText("");
-       precioInsertar.setText("");
-        numPagInsertar.setText("");
-        }
+
     }//GEN-LAST:event_insertarAccionActionPerformed
 
     private void leerAccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leerAccionActionPerformed
-        // TODO add your handling code here:
-        if (archivoObjeto.libroBuscado("Biblioteca.txt", Integer.parseInt(String.valueOf(isbnLeer)))==null) {
-         libros.get(Integer.parseInt(archivoObjeto.libroBuscado("Biblioteca.txt", Integer.parseInt(String.valueOf(isbnLeer)))));    
-        }
-        else{
-             JOptionPane.showMessageDialog(null, "ILLO EL LIBRO NO EXISTE", "ILLOOOOOOOOOO", JOptionPane.ERROR_MESSAGE);
-        }
-  
-     
-        
+
     }//GEN-LAST:event_leerAccionActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -703,32 +673,7 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_atrasEliminarActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-         DefaultTableModel modelo_vacio = 
-              (DefaultTableModel) jTable1.getModel();
-      
-     modelo_vacio.setRowCount(0);
-   //FIN LIMPIAR TABLA     
 
-   libros = 
-      archivoObjeto.leerLibros("Biblioteca.txt");
-        
-   DefaultTableModel modelo = 
-           (DefaultTableModel) jTable1.getModel();
-        
-    for( Libro libro : libros ){
-      //  System.out.println("toamaña lista:" +lista_serializable.size());
-        Object[] fila = new Object[5];
-        fila[0] = libro.getIsbn();
-        fila[1] = libro.getTitulo();
-        fila[2] = libro.getCategoria();
-        fila[3] = libro.getPrecio();
-        fila[4] = libro.getNumeroPags();
-        modelo.addRow(fila);
-    }      
-        jTable1.setModel(modelo);
-          
-        
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void isbnInsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isbnInsertarActionPerformed
