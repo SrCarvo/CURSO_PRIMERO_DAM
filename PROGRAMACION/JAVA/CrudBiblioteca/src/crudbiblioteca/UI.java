@@ -4,6 +4,8 @@
  */
 package crudbiblioteca;
 
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -14,6 +16,9 @@ import javax.swing.table.DefaultTableModel;
  */
 public class UI extends javax.swing.JFrame {
 
+    Libro libros = new Libro();
+    BibliotecaManager gestor = new BibliotecaManager();
+    boolean accion;
 
     /**
      * Creates new form UI
@@ -59,28 +64,29 @@ public class UI extends javax.swing.JFrame {
         atrasLeer = new javax.swing.JButton();
         MODIFICAR = new javax.swing.JDialog();
         jLabel5 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
+        numPagModificar = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jButton4 = new javax.swing.JButton();
+        isbnModificar = new javax.swing.JTextField();
+        tituloModificar = new javax.swing.JTextField();
+        categoriaModificar = new javax.swing.JTextField();
+        precioModificar = new javax.swing.JTextField();
+        modificarAccion = new javax.swing.JButton();
         atrasModificar = new javax.swing.JButton();
+        buscarAccion1 = new javax.swing.JButton();
         ELIMINAR = new javax.swing.JDialog();
         jLabel6 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
+        numPagEliminar = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
-        jTextField19 = new javax.swing.JTextField();
-        jTextField20 = new javax.swing.JTextField();
+        isbnEliminar = new javax.swing.JTextField();
+        tituloEliminar = new javax.swing.JTextField();
+        categoriaEliminar = new javax.swing.JTextField();
+        precioEliminar = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
         atrasEliminar = new javax.swing.JButton();
         ELECCION = new javax.swing.JDialog();
@@ -97,12 +103,11 @@ public class UI extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         atrasLecturaCompleta = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        leerTodo = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         INSERTAR.setMinimumSize(new java.awt.Dimension(319, 536));
-        INSERTAR.setPreferredSize(new java.awt.Dimension(319, 536));
         INSERTAR.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setBackground(new java.awt.Color(204, 204, 204));
@@ -179,7 +184,6 @@ public class UI extends javax.swing.JFrame {
         INSERTAR.getContentPane().add(atrasAnadir, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, -1));
 
         LEER.setMinimumSize(new java.awt.Dimension(319, 536));
-        LEER.setPreferredSize(new java.awt.Dimension(319, 536));
         LEER.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setBackground(new java.awt.Color(204, 204, 204));
@@ -255,8 +259,8 @@ public class UI extends javax.swing.JFrame {
         });
         LEER.getContentPane().add(atrasLeer, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, -1));
 
-        MODIFICAR.setMinimumSize(new java.awt.Dimension(319, 536));
-        MODIFICAR.setPreferredSize(new java.awt.Dimension(319, 536));
+        MODIFICAR.setMinimumSize(new java.awt.Dimension(319, 584));
+        MODIFICAR.setPreferredSize(new java.awt.Dimension(319, 584));
         MODIFICAR.setResizable(false);
         MODIFICAR.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -266,9 +270,9 @@ public class UI extends javax.swing.JFrame {
         jLabel5.setOpaque(true);
         MODIFICAR.getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, -1));
 
-        jTextField11.setBackground(new java.awt.Color(225, 225, 225));
-        jTextField11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        MODIFICAR.getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 280, 46));
+        numPagModificar.setBackground(new java.awt.Color(225, 225, 225));
+        numPagModificar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        MODIFICAR.getContentPane().add(numPagModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 280, 46));
 
         jLabel16.setBackground(new java.awt.Color(204, 204, 204));
         jLabel16.setText("ISBN");
@@ -294,31 +298,37 @@ public class UI extends javax.swing.JFrame {
         jLabel19.setOpaque(true);
         MODIFICAR.getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
 
-        jTextField12.setBackground(new java.awt.Color(225, 225, 225));
-        jTextField12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        MODIFICAR.getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 280, 46));
-
-        jTextField13.setBackground(new java.awt.Color(225, 225, 225));
-        jTextField13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        MODIFICAR.getContentPane().add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 280, 46));
-
-        jTextField14.setBackground(new java.awt.Color(225, 225, 225));
-        jTextField14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        MODIFICAR.getContentPane().add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 280, 46));
-
-        jTextField15.setBackground(new java.awt.Color(225, 225, 225));
-        jTextField15.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        MODIFICAR.getContentPane().add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 280, 46));
-
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton4.setText("MODICAR");
-        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        isbnModificar.setBackground(new java.awt.Color(225, 225, 225));
+        isbnModificar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        isbnModificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                isbnModificarActionPerformed(evt);
             }
         });
-        MODIFICAR.getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 180, 40));
+        MODIFICAR.getContentPane().add(isbnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 280, 46));
+
+        tituloModificar.setBackground(new java.awt.Color(225, 225, 225));
+        tituloModificar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        tituloModificar.setOpaque(true);
+        MODIFICAR.getContentPane().add(tituloModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 280, 46));
+
+        categoriaModificar.setBackground(new java.awt.Color(225, 225, 225));
+        categoriaModificar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        MODIFICAR.getContentPane().add(categoriaModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 280, 46));
+
+        precioModificar.setBackground(new java.awt.Color(225, 225, 225));
+        precioModificar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        MODIFICAR.getContentPane().add(precioModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 280, 46));
+
+        modificarAccion.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        modificarAccion.setText("MODICAR");
+        modificarAccion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        modificarAccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modificarAccionActionPerformed(evt);
+            }
+        });
+        MODIFICAR.getContentPane().add(modificarAccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 530, 180, 40));
 
         atrasModificar.setText("Atras");
         atrasModificar.addActionListener(new java.awt.event.ActionListener() {
@@ -328,8 +338,17 @@ public class UI extends javax.swing.JFrame {
         });
         MODIFICAR.getContentPane().add(atrasModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, -1));
 
+        buscarAccion1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        buscarAccion1.setText("BUSCAR");
+        buscarAccion1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buscarAccion1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buscarAccion1ActionPerformed(evt);
+            }
+        });
+        MODIFICAR.getContentPane().add(buscarAccion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 180, 40));
+
         ELIMINAR.setMinimumSize(new java.awt.Dimension(319, 536));
-        ELIMINAR.setPreferredSize(new java.awt.Dimension(319, 536));
         ELIMINAR.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel6.setBackground(new java.awt.Color(204, 204, 204));
@@ -338,9 +357,9 @@ public class UI extends javax.swing.JFrame {
         jLabel6.setOpaque(true);
         ELIMINAR.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, -1));
 
-        jTextField16.setBackground(new java.awt.Color(225, 225, 225));
-        jTextField16.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        ELIMINAR.getContentPane().add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 280, 46));
+        numPagEliminar.setBackground(new java.awt.Color(225, 225, 225));
+        numPagEliminar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        ELIMINAR.getContentPane().add(numPagEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 280, 46));
 
         jLabel20.setBackground(new java.awt.Color(204, 204, 204));
         jLabel20.setText("ISBN");
@@ -366,24 +385,24 @@ public class UI extends javax.swing.JFrame {
         jLabel23.setOpaque(true);
         ELIMINAR.getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
 
-        jTextField17.setBackground(new java.awt.Color(225, 225, 225));
-        jTextField17.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        ELIMINAR.getContentPane().add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 280, 46));
+        isbnEliminar.setBackground(new java.awt.Color(225, 225, 225));
+        isbnEliminar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        ELIMINAR.getContentPane().add(isbnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 280, 46));
 
-        jTextField18.setBackground(new java.awt.Color(225, 225, 225));
-        jTextField18.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        ELIMINAR.getContentPane().add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 280, 46));
+        tituloEliminar.setBackground(new java.awt.Color(225, 225, 225));
+        tituloEliminar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        ELIMINAR.getContentPane().add(tituloEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 280, 46));
 
-        jTextField19.setBackground(new java.awt.Color(225, 225, 225));
-        jTextField19.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        ELIMINAR.getContentPane().add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 280, 46));
+        categoriaEliminar.setBackground(new java.awt.Color(225, 225, 225));
+        categoriaEliminar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        ELIMINAR.getContentPane().add(categoriaEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 280, 46));
 
-        jTextField20.setBackground(new java.awt.Color(225, 225, 225));
-        jTextField20.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        ELIMINAR.getContentPane().add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 280, 46));
+        precioEliminar.setBackground(new java.awt.Color(225, 225, 225));
+        precioEliminar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        ELIMINAR.getContentPane().add(precioEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 280, 46));
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton5.setText("MODICAR");
+        jButton5.setText("ELIMINAR");
         jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -400,7 +419,6 @@ public class UI extends javax.swing.JFrame {
         });
         ELIMINAR.getContentPane().add(atrasEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, -1));
 
-        ELECCION.setMaximumSize(new java.awt.Dimension(667, 369));
         ELECCION.setMinimumSize(new java.awt.Dimension(667, 369));
         ELECCION.setResizable(false);
 
@@ -545,13 +563,13 @@ public class UI extends javax.swing.JFrame {
         });
         LEERCOMPLETO.getContentPane().add(atrasLecturaCompleta, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, -1, -1));
 
-        jButton6.setText("jButton6");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        leerTodo.setText("Leer");
+        leerTodo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                leerTodoActionPerformed(evt);
             }
         });
-        LEERCOMPLETO.getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 600, -1, -1));
+        LEERCOMPLETO.getContentPane().add(leerTodo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 600, -1, -1));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(584, 362));
@@ -576,19 +594,81 @@ public class UI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void insertarAccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insertarAccionActionPerformed
+        /*No es necesario, pero por legibilidad vamos declar variables de las caracteristicas del libro*/
+        String ISBN = (isbnInsertar.getText());
+        String TITULO = tituloInsertar.getText();
+        String CATEGORIA = categoriaInsertar.getText();
+        double PRECIO = Double.parseDouble(precioInsertar.getText());
+        int NUMPAG = Integer.parseInt(numPagInsertar.getText());
+
+        /*aqui aplicamos las variables a Libro*/
+        libros.setIsbn(ISBN);
+        libros.setTitulo(TITULO);
+        libros.setCategoria(CATEGORIA);
+        libros.setPrecio(PRECIO);
+        libros.setNumPaginas(NUMPAG);
+        if (gestor.agregarLibro(libros) == false) {
+            JOptionPane.showMessageDialog(null, "error", "error", JOptionPane.ERROR_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, "ingresado", "ingresado", JOptionPane.INFORMATION_MESSAGE);
+        }
+        isbnInsertar.setText("");
+        tituloInsertar.setText("");
+        categoriaInsertar.setText("");
+        precioInsertar.setText("");
+        numPagInsertar.setText("");
+
 
     }//GEN-LAST:event_insertarAccionActionPerformed
 
     private void leerAccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leerAccionActionPerformed
-
+        String ISBN = (isbnLeer.getText());
+        if (gestor.buscarPorIsbn(ISBN) == null) {
+            JOptionPane.showMessageDialog(null, "error", "error", JOptionPane.ERROR_MESSAGE);
+        } else {
+            libros = gestor.buscarPorIsbn(ISBN);
+            isbnLeer.setText(libros.getIsbn());
+            tituloLeer.setText(libros.getTitulo());
+            categoriaLeer.setText(libros.getCategoria());
+            precioLeer.setText(String.valueOf(libros.getPrecio()));
+            numPagLeer.setText(String.valueOf(libros.getNumPaginas()));
+        }
     }//GEN-LAST:event_leerAccionActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void modificarAccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificarAccionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+        
+        gestor.eliminarLibro(libros.getIsbn());    
+        String ISBN = (isbnModificar.getText());
+        String TITULO = tituloModificar.getText();
+        String CATEGORIA = categoriaModificar.getText();
+        double PRECIO = Double.parseDouble(precioModificar.getText());
+        int NUMPAG = Integer.parseInt(numPagModificar.getText());
+        
+        
+        
+        libros.setIsbn(ISBN);
+        libros.setTitulo(TITULO);
+        libros.setCategoria(CATEGORIA);
+        libros.setPrecio(PRECIO);
+        libros.setNumPaginas(NUMPAG);
+        
+        
+        if (gestor.agregarLibro(libros) == false) {
+            JOptionPane.showMessageDialog(null, "error", "error", JOptionPane.ERROR_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, "ingresado", "ingresado", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        gestor.agregarLibro(libros);
+
+    }//GEN-LAST:event_modificarAccionActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        String ISBN = (isbnModificar.getText());
+        gestor.eliminarLibro(ISBN);
+        JOptionPane.showMessageDialog(null, "eliminado", "eliminado", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void eliminarCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarCheckActionPerformed
@@ -599,14 +679,14 @@ public class UI extends javax.swing.JFrame {
         // TODO add your handling code here:
         LEERCOMPLETO.setVisible(true);
         ELECCION.setVisible(false);
-        
+
     }//GEN-LAST:event_leerCompletoActionPerformed
 
     private void atrasSeleccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasSeleccionActionPerformed
         // TODO add your handling code here:
         ELECCION.setVisible(false);
         this.setVisible(true);
-        
+
     }//GEN-LAST:event_atrasSeleccionActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -642,10 +722,10 @@ public class UI extends javax.swing.JFrame {
     private void eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarActionPerformed
         // TODO add your handling code here:
         if (eliminarCheck.isSelected()) {
-         ELIMINAR.setVisible(true);
-        ELECCION.setVisible(false);   
+            ELIMINAR.setVisible(true);
+            ELECCION.setVisible(false);
         }
-        
+
     }//GEN-LAST:event_eliminarActionPerformed
 
     private void atrasAnadirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasAnadirActionPerformed
@@ -672,9 +752,29 @@ public class UI extends javax.swing.JFrame {
         ELIMINAR.setVisible(false);
     }//GEN-LAST:event_atrasEliminarActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
 
-    }//GEN-LAST:event_jButton6ActionPerformed
+    private void leerTodoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leerTodoActionPerformed
+    
+    
+    // Limpiar la tabla antes de agregar nuevos datos
+    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+    model.setRowCount(0);
+    
+    try {
+        FileInputStream fis = new FileInputStream("biblioteca.dat");
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        
+        ArrayList<Libro> libros = (ArrayList<Libro>) ois.readObject();
+        for (Libro libro : libros) {
+            model.addRow(new Object[]{libro.getIsbn(), libro.getTitulo(), libro.getCategoria(), libro.getPrecio(), libro.getNumPaginas()});
+        }
+        
+        ois.close();
+        fis.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    }//GEN-LAST:event_leerTodoActionPerformed
 
     private void isbnInsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isbnInsertarActionPerformed
         // TODO add your handling code here:
@@ -683,6 +783,24 @@ public class UI extends javax.swing.JFrame {
     private void isbnLeerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isbnLeerActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_isbnLeerActionPerformed
+
+    private void isbnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isbnModificarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_isbnModificarActionPerformed
+
+    private void buscarAccion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarAccion1ActionPerformed
+        // TODO add your handling code here:
+
+        if (isbnModificar.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "error", "error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        String isbn = isbnEliminar.getText();
+        libros = gestor.buscarPorIsbn(isbn);
+        
+        
+    
+    }//GEN-LAST:event_buscarAccion1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -733,17 +851,20 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JButton atrasModificar;
     private javax.swing.JButton atrasSeleccion;
     private javax.swing.JButton añadir;
+    private javax.swing.JButton buscarAccion1;
+    private javax.swing.JTextField categoriaEliminar;
     private javax.swing.JTextField categoriaInsertar;
     private javax.swing.JTextField categoriaLeer;
+    private javax.swing.JTextField categoriaModificar;
     private javax.swing.JButton eliminar;
     private javax.swing.JCheckBox eliminarCheck;
     private javax.swing.JButton insertarAccion;
+    private javax.swing.JTextField isbnEliminar;
     private javax.swing.JTextField isbnInsertar;
     private javax.swing.JTextField isbnLeer;
+    private javax.swing.JTextField isbnModificar;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -769,25 +890,23 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField20;
     private javax.swing.JButton leer;
     private javax.swing.JButton leerAccion;
     private javax.swing.JButton leerCompleto;
+    private javax.swing.JButton leerTodo;
     private javax.swing.JButton modificar;
+    private javax.swing.JButton modificarAccion;
+    private javax.swing.JTextField numPagEliminar;
     private javax.swing.JTextField numPagInsertar;
     private javax.swing.JTextField numPagLeer;
+    private javax.swing.JTextField numPagModificar;
+    private javax.swing.JTextField precioEliminar;
     private javax.swing.JTextField precioInsertar;
     private javax.swing.JTextField precioLeer;
+    private javax.swing.JTextField precioModificar;
+    private javax.swing.JTextField tituloEliminar;
     private javax.swing.JTextField tituloInsertar;
     private javax.swing.JTextField tituloLeer;
+    private javax.swing.JTextField tituloModificar;
     // End of variables declaration//GEN-END:variables
 }

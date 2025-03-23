@@ -10,61 +10,62 @@ import java.io.Serializable;
  *
  * @author tomaa
  */
-public class Libro implements Serializable {
-    private int isbn;
+public class Libro implements Serializable { 
+  private static final long serialVersionUID = 1L;
+    
+    private String isbn;
     private String titulo;
     private String categoria;
     private double precio;
-    private int numeroPags;
+    private int numPaginas;
+    public Libro() {}
     
-    public Libro() { }
-
-    public Libro(int isbn, String titulo, String categoria, double precio, int numeroPags) {
-        this.isbn = isbn;
-        this.titulo = titulo;
-        this.categoria = categoria;
-        this.precio = precio;
-        this.numeroPags = numeroPags;
-    }
-
-    public int getIsbn() {
+    
+    // Getters y Setters
+    public String getIsbn() {
         return isbn;
     }
-
-    public void setIsbn(int isbn) {
+    
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
-
+    
     public String getTitulo() {
         return titulo;
     }
-
+    
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-
+    
     public String getCategoria() {
         return categoria;
     }
-
+    
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
-
+    
     public double getPrecio() {
         return precio;
     }
-
+    
     public void setPrecio(double precio) {
         this.precio = precio;
     }
-
-    public int getNumeroPags() {
-        return numeroPags;
+    
+    public int getNumPaginas() {
+        return numPaginas;
     }
-
-    public void setNumeroPags(int numeroPags) {
-        this.numeroPags = numeroPags;
+    
+    public void setNumPaginas(int numPaginas) {
+        this.numPaginas = numPaginas;
+    }
+    
+    @Override
+    public String toString() {
+        return "ISBN: " + isbn + ", Título: " + titulo + ", Categoría: " + categoria + 
+               ", Precio: " + precio + ", Páginas: " + numPaginas;
     }
     
 }
