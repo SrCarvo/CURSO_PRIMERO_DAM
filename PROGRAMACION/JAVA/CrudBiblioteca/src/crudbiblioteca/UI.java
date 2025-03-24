@@ -4,9 +4,20 @@
  */
 package crudbiblioteca;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
+import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -17,6 +28,7 @@ import javax.swing.table.DefaultTableModel;
 public class UI extends javax.swing.JFrame {
 
     Libro libros = new Libro();
+    Enciclopedia enciclopedia = new Enciclopedia();
     BibliotecaManager gestor = new BibliotecaManager();
     boolean accion;
 
@@ -99,12 +111,26 @@ public class UI extends javax.swing.JFrame {
         leerCompleto = new javax.swing.JButton();
         atrasSeleccion = new javax.swing.JButton();
         añadir1 = new javax.swing.JButton();
+        tipoEnciclopedia = new javax.swing.JRadioButton();
+        tipoLibro = new javax.swing.JRadioButton();
         LEERCOMPLETO = new javax.swing.JDialog();
         jLabel7 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         atrasLecturaCompleta = new javax.swing.JButton();
         leerTodo = new javax.swing.JButton();
+        tipoLibros = new javax.swing.ButtonGroup();
+        reproductor = new javax.swing.JDialog();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        stop = new javax.swing.JButton();
+        pause = new javax.swing.JButton();
+        play = new javax.swing.JButton();
+        reproducirSiguiente = new javax.swing.JButton();
+        reproducirAnterior = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
@@ -261,7 +287,6 @@ public class UI extends javax.swing.JFrame {
         LEER.getContentPane().add(atrasLeer, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, -1));
 
         MODIFICAR.setMinimumSize(new java.awt.Dimension(319, 584));
-        MODIFICAR.setPreferredSize(new java.awt.Dimension(319, 584));
         MODIFICAR.setResizable(false);
         MODIFICAR.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -493,6 +518,20 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
+        tipoEnciclopedia.setText("Enciclopedia");
+        tipoEnciclopedia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tipoEnciclopediaActionPerformed(evt);
+            }
+        });
+
+        tipoLibro.setText("Libro");
+        tipoLibro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tipoLibroActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout ELECCIONLayout = new javax.swing.GroupLayout(ELECCION.getContentPane());
         ELECCION.getContentPane().setLayout(ELECCIONLayout);
         ELECCIONLayout.setHorizontalGroup(
@@ -500,24 +539,29 @@ public class UI extends javax.swing.JFrame {
             .addGroup(ELECCIONLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(ELECCIONLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ELECCIONLayout.createSequentialGroup()
-                        .addComponent(eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(eliminarCheck))
                     .addComponent(modificar, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(ELECCIONLayout.createSequentialGroup()
                         .addComponent(leer, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27)
                         .addComponent(leerCompleto))
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(añadir, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(añadir, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(ELECCIONLayout.createSequentialGroup()
+                        .addGroup(ELECCIONLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, ELECCIONLayout.createSequentialGroup()
+                                .addComponent(tipoLibro)
+                                .addGap(37, 37, 37)
+                                .addComponent(tipoEnciclopedia))
+                            .addGroup(ELECCIONLayout.createSequentialGroup()
+                                .addComponent(eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(eliminarCheck)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(ELECCIONLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(añadir1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(atrasSeleccion))
+                        .addGap(6, 6, 6)))
                 .addContainerGap(25, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ELECCIONLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(ELECCIONLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(añadir1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(atrasSeleccion))
-                .addGap(31, 31, 31))
         );
         ELECCIONLayout.setVerticalGroup(
             ELECCIONLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -525,7 +569,10 @@ public class UI extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(añadir1)
+                .addGroup(ELECCIONLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(añadir1)
+                    .addComponent(tipoEnciclopedia)
+                    .addComponent(tipoLibro))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addComponent(añadir)
                 .addGap(18, 18, 18)
@@ -554,13 +601,13 @@ public class UI extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "ISBN", "TITULO", "CATEGORIA", "PRECIO", "Nº PAGS"
+                "ISBN", "TITULO", "CATEGORIA", "PRECIO", "Nº PAGS", "TIPO"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -582,6 +629,113 @@ public class UI extends javax.swing.JFrame {
             }
         });
         LEERCOMPLETO.getContentPane().add(leerTodo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 600, -1, -1));
+
+        reproductor.setMinimumSize(new java.awt.Dimension(992, 599));
+        reproductor.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "cancion1", "cancion2", "cancion3", " ", " " }));
+        jComboBox1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jComboBox1MouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jComboBox1MousePressed(evt);
+            }
+        });
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+        reproductor.getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 90, -1));
+
+        stop.setText("stop");
+        stop.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                stopActionPerformed(evt);
+            }
+        });
+        reproductor.getContentPane().add(stop, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
+
+        pause.setText("pause");
+        pause.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pauseActionPerformed(evt);
+            }
+        });
+        reproductor.getContentPane().add(pause, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, -1, -1));
+
+        play.setText("play");
+        play.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                playActionPerformed(evt);
+            }
+        });
+        reproductor.getContentPane().add(play, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, -1, -1));
+
+        reproducirSiguiente.setText("siguiente");
+        reproducirSiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reproducirSiguienteActionPerformed(evt);
+            }
+        });
+        reproductor.getContentPane().add(reproducirSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, -1, -1));
+
+        reproducirAnterior.setText("anterior");
+        reproducirAnterior.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reproducirAnteriorActionPerformed(evt);
+            }
+        });
+        reproductor.getContentPane().add(reproducirAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
+
+        jButton2.setText("atras");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        reproductor.getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(818, 19, -1, -1));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "peli1", "peli2", "peli3" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 248, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(82, 82, 82)
+                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(206, Short.MAX_VALUE))
+        );
+
+        reproductor.getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 320, 310));
+
+        jPanel2.setBackground(new java.awt.Color(153, 153, 153));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 340, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 290, Short.MAX_VALUE)
+        );
+
+        reproductor.getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 340, 290));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(584, 362));
@@ -607,6 +761,9 @@ public class UI extends javax.swing.JFrame {
 
     private void insertarAccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insertarAccionActionPerformed
         /*No es necesario, pero por legibilidad vamos declar variables de las caracteristicas del libro*/
+        
+        
+
         String ISBN = (isbnInsertar.getText());
         String TITULO = tituloInsertar.getText();
         String CATEGORIA = categoriaInsertar.getText();
@@ -614,6 +771,7 @@ public class UI extends javax.swing.JFrame {
         int NUMPAG = Integer.parseInt(numPagInsertar.getText());
 
         /*aqui aplicamos las variables a Libro*/
+        
         libros.setIsbn(ISBN);
         libros.setTitulo(TITULO);
         libros.setCategoria(CATEGORIA);
@@ -821,9 +979,116 @@ public class UI extends javax.swing.JFrame {
 
     }//GEN-LAST:event_buscarAccion1ActionPerformed
 
+
     private void añadir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_añadir1ActionPerformed
         // TODO add your handling code here:
+        reproductor.setVisible(true);
+        ELECCION.setVisible(false);
     }//GEN-LAST:event_añadir1ActionPerformed
+
+    private void tipoLibroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tipoLibroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tipoLibroActionPerformed
+
+    private void tipoEnciclopediaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tipoEnciclopediaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tipoEnciclopediaActionPerformed
+
+    private void reproducirAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reproducirAnteriorActionPerformed
+        // TODO add your handling code here:
+        int posicion = jComboBox1.getSelectedIndex();
+        if (jComboBox1.getSelectedIndex()<1) {
+            posicion = 3;
+        }
+        jComboBox1.setSelectedIndex(posicion-1);
+        String cancionSeleccionada = String.valueOf(jComboBox1.getSelectedItem());
+    
+    // Verificar y reproducir la canción
+    initializeMediaPlayer(cancionSeleccionada);
+    }//GEN-LAST:event_reproducirAnteriorActionPerformed
+
+    private void playActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playActionPerformed
+        // TODO add your handling code here:
+        if (mediaPlayer != null) {
+            mediaPlayer.play();
+        }
+
+    }//GEN-LAST:event_playActionPerformed
+
+    private void stopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stopActionPerformed
+        // TODO add your handling code here:
+        if (mediaPlayer != null) {
+            mediaPlayer.stop();
+        }
+    }//GEN-LAST:event_stopActionPerformed
+
+    private void pauseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pauseActionPerformed
+        // TODO add your handling code here:
+        if (mediaPlayer != null) {
+            mediaPlayer.pause();
+        }
+    }//GEN-LAST:event_pauseActionPerformed
+
+    private void reproducirSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reproducirSiguienteActionPerformed
+        // TODO add your handling code here:
+        
+        int posicion = jComboBox1.getSelectedIndex();
+        if (jComboBox1.getSelectedIndex()>1) {
+            posicion = -1;
+        }
+        jComboBox1.setSelectedIndex(posicion+1);
+        String cancionSeleccionada = String.valueOf(jComboBox1.getSelectedItem());
+    
+    // Verificar y reproducir la canción
+    initializeMediaPlayer(cancionSeleccionada);
+    }//GEN-LAST:event_reproducirSiguienteActionPerformed
+
+    private void jComboBox1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jComboBox1MouseClicked
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jComboBox1MouseClicked
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        ELECCION.setVisible(true);
+        reproductor.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jComboBox1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jComboBox1MousePressed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jComboBox1MousePressed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+            // Obtener la canción seleccionada
+    String cancionSeleccionada = String.valueOf(jComboBox1.getSelectedItem());
+    
+    // Verificar y reproducir la canción
+    initializeMediaPlayer(cancionSeleccionada);
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+    private MediaPlayer mediaPlayer;
+
+    private void initializeMediaPlayer(String filePath) {
+        try {
+            if (mediaPlayer != null) {
+                mediaPlayer.stop();
+            }
+            Media media = new Media(new File(filePath+".mp3").toURI().toString());
+            mediaPlayer = new MediaPlayer(media);
+            mediaPlayer.play();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error loading media: " + e.getMessage(),
+                    "Media Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+    
 
     /**
      * @param args the command line arguments
@@ -889,6 +1154,9 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JTextField isbnLeer;
     private javax.swing.JTextField isbnModificar;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -912,6 +1180,8 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JButton leer;
@@ -924,10 +1194,19 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JTextField numPagInsertar;
     private javax.swing.JTextField numPagLeer;
     private javax.swing.JTextField numPagModificar;
+    private javax.swing.JButton pause;
+    private javax.swing.JButton play;
     private javax.swing.JTextField precioEliminar;
     private javax.swing.JTextField precioInsertar;
     private javax.swing.JTextField precioLeer;
     private javax.swing.JTextField precioModificar;
+    private javax.swing.JButton reproducirAnterior;
+    private javax.swing.JButton reproducirSiguiente;
+    private javax.swing.JDialog reproductor;
+    private javax.swing.JButton stop;
+    private javax.swing.JRadioButton tipoEnciclopedia;
+    private javax.swing.JRadioButton tipoLibro;
+    private javax.swing.ButtonGroup tipoLibros;
     private javax.swing.JTextField tituloEliminar;
     private javax.swing.JTextField tituloInsertar;
     private javax.swing.JTextField tituloLeer;

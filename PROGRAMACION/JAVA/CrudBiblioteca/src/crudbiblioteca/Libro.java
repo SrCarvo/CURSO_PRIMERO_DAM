@@ -18,6 +18,15 @@ public class Libro implements Serializable {
     private String categoria;
     private double precio;
     private int numPaginas;
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    private String tipo;
     public Libro() {}
     
     

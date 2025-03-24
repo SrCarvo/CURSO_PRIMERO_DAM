@@ -8,6 +8,6 @@ package crudbiblioteca;
  *
  * @author tomaa
  */
-public class Enciclopedia {
-    
+public class Enciclopedia extends Libro {
+   
 }
