@@ -292,7 +292,7 @@
           <Color blue="99" green="99" red="ff" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\GIT\PROGRAMACION\JAVA\ReproductorMultimedia\src\reproductormultimedia\file(1).png"/>
+          <Image iconType="3" name="/reproductormultimedia/file(1).png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
@@ -318,7 +318,7 @@
           <Color blue="0" green="66" red="66" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\GIT\PROGRAMACION\JAVA\ReproductorMultimedia\src\reproductormultimedia\file.png"/>
+          <Image iconType="3" name="/reproductormultimedia/file.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
@@ -341,7 +341,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\GIT\PROGRAMACION\JAVA\ReproductorMultimedia\src\reproductormultimedia\MP3(1).png"/>
+          <Image iconType="3" name="/reproductormultimedia/MP3(1).png"/>
         </Property>
       </Properties>
       <Constraints>

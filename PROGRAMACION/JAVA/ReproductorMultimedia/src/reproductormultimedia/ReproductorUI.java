@@ -179,7 +179,7 @@ public class ReproductorUI extends javax.swing.JFrame {
         getContentPane().add(jSlider1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 390, 190, 40));
 
         jButton1.setBackground(new java.awt.Color(255, 153, 153));
-        jButton1.setIcon(new javax.swing.ImageIcon("D:\\GIT\\PROGRAMACION\\JAVA\\ReproductorMultimedia\\src\\reproductormultimedia\\file(1).png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reproductormultimedia/file(1).png"))); // NOI18N
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,7 +190,7 @@ public class ReproductorUI extends javax.swing.JFrame {
 
         jButton3.setBackground(new java.awt.Color(255, 153, 153));
         jButton3.setForeground(new java.awt.Color(102, 102, 0));
-        jButton3.setIcon(new javax.swing.ImageIcon("D:\\GIT\\PROGRAMACION\\JAVA\\ReproductorMultimedia\\src\\reproductormultimedia\\file.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reproductormultimedia/file.png"))); // NOI18N
         jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/reproductormultimedia/file.png"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -200,7 +200,7 @@ public class ReproductorUI extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 330, 90, 100));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\GIT\\PROGRAMACION\\JAVA\\ReproductorMultimedia\\src\\reproductormultimedia\\MP3(1).png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reproductormultimedia/MP3(1).png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, -1));
 
         jMenu1.setText("Ajustes");
