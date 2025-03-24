@@ -87,7 +87,7 @@ public class UI extends javax.swing.JFrame {
         tituloEliminar = new javax.swing.JTextField();
         categoriaEliminar = new javax.swing.JTextField();
         precioEliminar = new javax.swing.JTextField();
-        jButton5 = new javax.swing.JButton();
+        eliminarAccion = new javax.swing.JButton();
         atrasEliminar = new javax.swing.JButton();
         ELECCION = new javax.swing.JDialog();
         jLabel2 = new javax.swing.JLabel();
@@ -98,6 +98,7 @@ public class UI extends javax.swing.JFrame {
         eliminarCheck = new javax.swing.JCheckBox();
         leerCompleto = new javax.swing.JButton();
         atrasSeleccion = new javax.swing.JButton();
+        añadir1 = new javax.swing.JButton();
         LEERCOMPLETO = new javax.swing.JDialog();
         jLabel7 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -401,15 +402,15 @@ public class UI extends javax.swing.JFrame {
         precioEliminar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ELIMINAR.getContentPane().add(precioEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 280, 46));
 
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton5.setText("ELIMINAR");
-        jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        eliminarAccion.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        eliminarAccion.setText("ELIMINAR");
+        eliminarAccion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        eliminarAccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                eliminarAccionActionPerformed(evt);
             }
         });
-        ELIMINAR.getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 180, 40));
+        ELIMINAR.getContentPane().add(eliminarAccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 180, 40));
 
         atrasEliminar.setText("Atras");
         atrasEliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -419,7 +420,7 @@ public class UI extends javax.swing.JFrame {
         });
         ELIMINAR.getContentPane().add(atrasEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, -1));
 
-        ELECCION.setMinimumSize(new java.awt.Dimension(667, 369));
+        ELECCION.setMinimumSize(new java.awt.Dimension(642, 393));
         ELECCION.setResizable(false);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 3, 48)); // NOI18N
@@ -484,6 +485,14 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
+        añadir1.setText("MEDIA");
+        añadir1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        añadir1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                añadir1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout ELECCIONLayout = new javax.swing.GroupLayout(ELECCION.getContentPane());
         ELECCION.getContentPane().setLayout(ELECCIONLayout);
         ELECCIONLayout.setHorizontalGroup(
@@ -502,10 +511,12 @@ public class UI extends javax.swing.JFrame {
                         .addComponent(leerCompleto))
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(añadir, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ELECCIONLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(atrasSeleccion)
+                .addGroup(ELECCIONLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(añadir1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(atrasSeleccion))
                 .addGap(31, 31, 31))
         );
         ELECCIONLayout.setVerticalGroup(
@@ -513,7 +524,9 @@ public class UI extends javax.swing.JFrame {
             .addGroup(ELECCIONLayout.createSequentialGroup()
                 .addGap(36, 36, 36)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(añadir1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addComponent(añadir)
                 .addGap(18, 18, 18)
                 .addGroup(ELECCIONLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -531,7 +544,6 @@ public class UI extends javax.swing.JFrame {
         );
 
         LEERCOMPLETO.setMinimumSize(new java.awt.Dimension(692, 645));
-        LEERCOMPLETO.setPreferredSize(new java.awt.Dimension(692, 645));
         LEERCOMPLETO.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("Segoe UI Black", 3, 48)); // NOI18N
@@ -637,39 +649,41 @@ public class UI extends javax.swing.JFrame {
 
     private void modificarAccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificarAccionActionPerformed
         // TODO add your handling code here:
-        
-        gestor.eliminarLibro(libros.getIsbn());    
+        gestor.eliminarLibro(libros.getIsbn());
+
         String ISBN = (isbnModificar.getText());
         String TITULO = tituloModificar.getText();
         String CATEGORIA = categoriaModificar.getText();
         double PRECIO = Double.parseDouble(precioModificar.getText());
         int NUMPAG = Integer.parseInt(numPagModificar.getText());
-        
-        
-        
+
         libros.setIsbn(ISBN);
         libros.setTitulo(TITULO);
         libros.setCategoria(CATEGORIA);
         libros.setPrecio(PRECIO);
         libros.setNumPaginas(NUMPAG);
-        
-        
+
         if (gestor.agregarLibro(libros) == false) {
-            JOptionPane.showMessageDialog(null, "error", "error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "error", "2", JOptionPane.ERROR_MESSAGE);
         } else {
             JOptionPane.showMessageDialog(null, "ingresado", "ingresado", JOptionPane.INFORMATION_MESSAGE);
         }
-        
+
         gestor.agregarLibro(libros);
 
     }//GEN-LAST:event_modificarAccionActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void eliminarAccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarAccionActionPerformed
         // TODO add your handling code here:
-        String ISBN = (isbnModificar.getText());
-        gestor.eliminarLibro(ISBN);
-        JOptionPane.showMessageDialog(null, "eliminado", "eliminado", JOptionPane.INFORMATION_MESSAGE);
-    }//GEN-LAST:event_jButton5ActionPerformed
+        String ISBN = (isbnEliminar.getText());
+        if (gestor.eliminarLibro(ISBN) == true) {
+            JOptionPane.showMessageDialog(null, "eliminado", "eliminado", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, "error", "error", JOptionPane.ERROR_MESSAGE);
+        }
+
+
+    }//GEN-LAST:event_eliminarAccionActionPerformed
 
     private void eliminarCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarCheckActionPerformed
         // TODO add your handling code here:
@@ -754,26 +768,25 @@ public class UI extends javax.swing.JFrame {
 
 
     private void leerTodoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leerTodoActionPerformed
-    
-    
-    // Limpiar la tabla antes de agregar nuevos datos
-    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-    model.setRowCount(0);
-    
-    try {
-        FileInputStream fis = new FileInputStream("biblioteca.dat");
-        ObjectInputStream ois = new ObjectInputStream(fis);
-        
-        ArrayList<Libro> libros = (ArrayList<Libro>) ois.readObject();
-        for (Libro libro : libros) {
-            model.addRow(new Object[]{libro.getIsbn(), libro.getTitulo(), libro.getCategoria(), libro.getPrecio(), libro.getNumPaginas()});
+
+        // Limpiar la tabla antes de agregar nuevos datos
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.setRowCount(0);
+
+        try {
+            FileInputStream fis = new FileInputStream("biblioteca.dat");
+            ObjectInputStream ois = new ObjectInputStream(fis);
+
+            ArrayList<Libro> libros = (ArrayList<Libro>) ois.readObject();
+            for (Libro libro : libros) {
+                model.addRow(new Object[]{libro.getIsbn(), libro.getTitulo(), libro.getCategoria(), libro.getPrecio(), libro.getNumPaginas()});
+            }
+
+            ois.close();
+            fis.close();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        
-        ois.close();
-        fis.close();
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
     }//GEN-LAST:event_leerTodoActionPerformed
 
     private void isbnInsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isbnInsertarActionPerformed
@@ -795,12 +808,22 @@ public class UI extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "error", "error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-        String isbn = isbnEliminar.getText();
-        libros = gestor.buscarPorIsbn(isbn);
-        
-        
-    
+        String isbn = isbnModificar.getText();
+
+        if (gestor.buscarPorIsbn(isbn) != null) {
+            libros = gestor.buscarPorIsbn(isbn);
+            JOptionPane.showMessageDialog(null, "buscado correctamente");
+        } else {
+            JOptionPane.showMessageDialog(null, "error", "error", JOptionPane.ERROR_MESSAGE);
+
+        }
+
+
     }//GEN-LAST:event_buscarAccion1ActionPerformed
+
+    private void añadir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_añadir1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_añadir1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -851,12 +874,14 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JButton atrasModificar;
     private javax.swing.JButton atrasSeleccion;
     private javax.swing.JButton añadir;
+    private javax.swing.JButton añadir1;
     private javax.swing.JButton buscarAccion1;
     private javax.swing.JTextField categoriaEliminar;
     private javax.swing.JTextField categoriaInsertar;
     private javax.swing.JTextField categoriaLeer;
     private javax.swing.JTextField categoriaModificar;
     private javax.swing.JButton eliminar;
+    private javax.swing.JButton eliminarAccion;
     private javax.swing.JCheckBox eliminarCheck;
     private javax.swing.JButton insertarAccion;
     private javax.swing.JTextField isbnEliminar;
@@ -864,7 +889,6 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JTextField isbnLeer;
     private javax.swing.JTextField isbnModificar;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

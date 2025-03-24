@@ -41,8 +41,8 @@ public class BibliotecaManager {
     public boolean eliminarLibro(String isbn) {
     Libro libroAEliminar = buscarPorIsbn(isbn);
     if (libroAEliminar != null) {
-        libros.remove(libroAEliminar); // Eliminar de la lista
-        guardarLibros(); // Guardar la lista actualizada
+        libros.remove(libroAEliminar); 
+        guardarLibros(); 
         System.out.println("Libro eliminado: " + libroAEliminar.getTitulo());
         System.out.println("Libros restantes: " + libros.size());
         return true;
@@ -73,7 +73,7 @@ public boolean modificarLibro(String isbn, String categoria, String titulo, int 
     private void guardarLibros() {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(ARCHIVO_BIBLIOTECA))) {
             oos.writeObject(libros);
-            System.out.println("Biblioteca guardada exitosamente en " + ARCHIVO_BIBLIOTECA);
+           
         } catch (IOException e) {
             System.err.println("Error al guardar la biblioteca: " + e.getMessage());
         }
