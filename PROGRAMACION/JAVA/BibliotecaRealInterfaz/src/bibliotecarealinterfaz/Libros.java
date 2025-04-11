@@ -4,11 +4,13 @@
  */
 package bibliotecarealinterfaz;
 
+import java.io.Serializable;
+
 /**
  *
  * @author tomaa
  */
-public class Libros {
+public class Libros implements Serializable{
     private String ISBN;
     private String titulo;
     private String categoria;

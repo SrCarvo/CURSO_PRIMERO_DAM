@@ -795,6 +795,7 @@ public class UI extends javax.swing.JFrame {
         String ISBN = (isbnLeer.getText());
         if (gestor.buscarPorIsbn(ISBN) == null) {
             JOptionPane.showMessageDialog(null, "error", "error", JOptionPane.ERROR_MESSAGE);
+            
         } else {
             libros = gestor.buscarPorIsbn(ISBN);
             isbnLeer.setText(libros.getIsbn());
